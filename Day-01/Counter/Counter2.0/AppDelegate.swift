@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Counter
+//  Counter2.0
 //
-//  Created by Phil Wright on 1/30/16.
-//  Copyright © 2016 The Iron Yard. All rights reserved.
+//  Created by Bronson Dupaix on 2/1/16.
+//  Copyright © 2016 Bronson Dupaix. All rights reserved.
 //
 
 import UIKit
