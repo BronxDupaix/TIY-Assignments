@@ -60,7 +60,12 @@ class Arm: Bodypart {
         
     }
 }
-    class Hand : Arm {
+    class Hand : Bodypart{
+        
+        var numberOfFingers = 5
+        var hasKnuckles: Bool
+        var usedForHitting: Bool
+        
 
         func lifingObjects(){
             
@@ -74,9 +79,9 @@ class Arm: Bodypart {
     }
     
     class Leg : Bodypart{
-        
-        override init(numberOfBones: Int, coveredInSkin: Bool, containMuscle: String) {
-            super.init(numberOfBones: <#T##Int#>, coveredInSkin: <#T##Bool#>, containMuscle: <#T##String#>)
+        var attachedToFoot: Bool
+        var usedForStanding: Bool
+        var length: DOuble
         }
 
         func standing(){
@@ -89,11 +94,10 @@ class Arm: Bodypart {
         }
     }
     class Torso: Bodypart{
-        override init(numberOfBones: Int, coveredInSkin: Bool, containMuscle: String) {
-            super.init(numberOfBones: <#T##Int#>, coveredInSkin: <#T##Bool#>, containMuscle: <#T##String#>)
-        }
- 
+        
         var numberOfNipples: Int
+        var hasChestHair: Bool
+        var numberOfRibs: Int
         
         func housingIntestines(){
         }
@@ -106,55 +110,85 @@ class Arm: Bodypart {
         
     }
 
-            class chest: Torso{
-                
-                override init(numberOfBones: Int, coveredInSkin: Bool, containMuscle: String) {
-                    super.init(numberOfBones:Int, coveredInSkin: <#T##Bool#>, containMuscle: <#T##String#>)
-                }
+        class chest: Bodypart{
+            
                 var holdChestHair: Bool
                 var haveTattoos: Bool
                 var houseLungsAndHeart: Bool
+            
+            func regulatesBody() {
+            }
+            func growsHair() {
                 
-                override func keepingBodyPartsAttached() {
-                    
-                }
-                func 
+            }
+            func makesMilk() {
+                
+            }
     
         }
-
-    class leg: Bodypart{
-        var numberOfBones: Int
-        var length: Double
-        var attachedTo:String
-        func liftingObjects()
-        func containingMuscle()
-        func kicking()
-    
     class Head: Bodypart{
         var numberOfOrifices: Int
         var width: Double
         var attachedTo()
-        func containsBrain()
-        func headbutting()
-        func thinking()
+        
+        func containsBrain(){
+            
+        }
+        func headbutting() {
+            
+        }
+        func thinking() {
+            
+        }
     }
         class Shoulder: Bodypart{
             var width: Double
             var attactchedTo: String
             var numberOfBones: Int
-            func containMuscle()
-            func liftingObjects()
-            func punching()
+            
+            func containMuscle(){
+                
+            }
+            func liftingObjects() {
+                
+            }
+            func punching(){
+                
+            }
         }
         class Elbow: Bodypart{
+            
             var attachedTo: String
             var numberOfBones: Int
             var width: Double
-            func liftingObjects()
-            func punching()
-            func connectingBodyParts()
+            
+            func liftingObjects() {
+                
+            }
+            func punching(){
+                
+            }
+            func connectingBodyParts() {
+                
+            }
         }
+
+        class Mouth: Bodypart{
+            var howManyTeeth: Int
+            var holdsTongue: Bool
+            var howManyLips: Int
+    
+            func eating{
         
+    }
+            func biting{
+        
+    }
+            func breathing{
+        
+    }
+}
+
     
     
 }
