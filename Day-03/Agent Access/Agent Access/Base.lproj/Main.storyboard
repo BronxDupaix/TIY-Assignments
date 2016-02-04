@@ -25,14 +25,14 @@
                                 <rect key="frame" x="81" y="278" width="393" height="21"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.4077456413514291" green="0.83129618529660465" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhK-Lz-YwI">
                                 <rect key="frame" x="222" y="188" width="156" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="Kiya is gay">
-                                    <color key="titleColor" red="0.39644908676069468" green="0.7874188760745735" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="AUTHENTICATE">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="authenticateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCY-Zp-jtI"/>

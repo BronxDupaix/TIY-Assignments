@@ -21,11 +21,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if firstNameTextField.text == "Bronson" {
             
             if lastNameTextField.text == "Dupaix"{
-                self.view.backgroundColor = UIColor.purpleColor()
+                self.view.backgroundColor = UIColor.greenColor()
                 
                 if let name = lastNameTextField.text{
                     
-                    label.text = "Fuck you, Agent \(name)"
+                    label.text = "Good Evening, Agent \(name)"
 
                     
                 }
