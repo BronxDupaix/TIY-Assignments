@@ -33,38 +33,95 @@ import UIKit
 //* [ ] Tell 15 parts to do something from another part... bonus if you can chain 4 + parts through methods.
 
 class Bodypart {
-    class Hand : Bodypart{
-        var numberOfBones: Int
-        var coveredInSkin: Bool
-        var width: Double
-        func lifingObjects()
-        func holdingObjects()
-        func gripping()
+    var numberOfBones: Int
+    var coveredInSkin: Bool
+    var containMuscle: String
+    
+    init(numberOfBones:Int, coveredInSkin:Bool, containMuscle: String){
+        self.numberOfBones = numberOfBones
+        self.coveredInSkin = coveredInSkin
+        self.containMuscle = containMuscle
     }
-    class Foot : Bodypart{
-        var numberOfBones: Int
-        var coveredInSkin: Bool
-        var length: Double
-        func standing()
-        func kicking()
-        func walking()
+}
+
+class Arm: Bodypart {
+    var attachedTo: String = ""
+    var length: Double = 0
+    var width: Double = 0
+
+    
+    func liftingObjects(){
+        
+    }
+    func flexing(){
+        
+    }
+    func containMuscle(){
+        
+    }
+}
+    class Hand : Arm {
+
+        func lifingObjects(){
+            
+        }
+        func holdingObjects(){
+            
+        }
+        func gripping(){
+            
+        }
+    }
+    
+    class Leg : Bodypart{
+        
+        override init(numberOfBones: Int, coveredInSkin: Bool, containMuscle: String) {
+            super.init(numberOfBones: <#T##Int#>, coveredInSkin: <#T##Bool#>, containMuscle: <#T##String#>)
+        }
+
+        func standing(){
+            
+        }
+        func kicking(){
+            
+        }func walking(){
+            
+        }
     }
     class Torso: Bodypart{
-        var width: Double
-        var length: Double
+        override init(numberOfBones: Int, coveredInSkin: Bool, containMuscle: String) {
+            super.init(numberOfBones: <#T##Int#>, coveredInSkin: <#T##Bool#>, containMuscle: <#T##String#>)
+        }
+ 
         var numberOfNipples: Int
-        func housingIntestines()
-        func keepingBodyPartsAttached()
-        func storingFat()
+        
+        func housingIntestines(){
+        }
+        func keepingBodyPartsAttached(){
+            
+        }
+        func storingFat(){
+            
+        }
+        
     }
-    class Arm: Bodypart{
-        var attachedTo: String
-        var numberOfBones: Int
-        var length: Double
-        func liftingObjects()
-        func flexing()
-        func containMuscle
-    }
+
+            class chest: Torso{
+                
+                override init(numberOfBones: Int, coveredInSkin: Bool, containMuscle: String) {
+                    super.init(numberOfBones:Int, coveredInSkin: <#T##Bool#>, containMuscle: <#T##String#>)
+                }
+                var holdChestHair: Bool
+                var haveTattoos: Bool
+                var houseLungsAndHeart: Bool
+                
+                override func keepingBodyPartsAttached() {
+                    
+                }
+                func 
+    
+        }
+
     class leg: Bodypart{
         var numberOfBones: Int
         var length: Double

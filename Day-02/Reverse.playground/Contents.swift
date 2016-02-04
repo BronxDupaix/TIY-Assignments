@@ -8,9 +8,6 @@ import UIKit
 
 var numbers = [1,2,3,4]
 
-numbers = numbers.reverse()
-
-print(numbers)
 
 func reverse(numbers: [Int]) -> [Int] {
     

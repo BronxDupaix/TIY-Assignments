@@ -2,7 +2,7 @@
 
 import UIKit
 
-class tipCalculator{
+class TipCalculator{
     
     var dollarAmount: Double
     
@@ -10,12 +10,7 @@ class tipCalculator{
         self.dollarAmount = dollarAmount
     }
     
-    func tipAmt(totalAmount:Double, tipPct:Double) -> (tipTotal:Double, totalAmt:Double){
-        
-        
-        
-        
-    }
+    
     func tipCalc(tipPct:Double) -> Double{
         
         return self.dollarAmount * tipPct
@@ -25,13 +20,17 @@ class tipCalculator{
         let tip15 = tipCalc(0.15)
         let tip18 = tipCalc(0.18)
         let tip20 = tipCalc(0.20)
+        
+        print("\(tip15), \(tip18), \(tip20)")
+        print("\(tip15+dollarAmount), \(tip18+dollarAmount), \(tip20+dollarAmount)")
+
     }
     
 }
-let tip = tipCalculator(dollarAmount: 35.00)
+let tip = TipCalculator(dollarAmount: 35.00)
 
 
-
+tip.printPossibleTips()
 
 
 //Homework
