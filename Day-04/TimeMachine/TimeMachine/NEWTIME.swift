@@ -1,37 +1,15 @@
 //
-//  SetDestinationViewController.swift
+//  NEWTIME.swift
 //  TimeMachine
 //
-//  Created by Bronson Dupaix on 2/4/16.
+//  Created by Bronson Dupaix on 2/5/16.
 //  Copyright © 2016 Bronson Dupaix. All rights reserved.
 //
 
 import UIKit
 
-class SetDestinationViewController: UIViewController {
+class NEWTIME: UIViewController {
 
-    
-    @IBOutlet weak var datePicker: UIDatePicker!
-    
-    var destinationDate = ""
-    
-    
-   
-    @IBAction func datePicker(sender: UIDatePicker) {
-
-        let dateFormatter = NSDateFormatter()
-        
-        dateFormatter.dateFormat = "MMM-dd-yyyy"
-        
-        destinationDate = dateFormatter.stringFromDate(datePicker.date)
-        
-        print(destinationDate.uppercaseString) 
-        
-        
-        
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
