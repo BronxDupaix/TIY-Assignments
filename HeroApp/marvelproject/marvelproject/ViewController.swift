@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 var herosArray = [Hero]()
     
-    var currentHero : Hero?
+    var currentHero: Hero?
     
     
     

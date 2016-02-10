@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReactionGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KD2-So-x0b">
+                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOO-W4-y6N">
+                                <rect key="frame" x="20" y="96" width="560" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="StartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6O-GV-WOY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-hx-KXP">
+                                <rect key="frame" x="20" y="164" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NfT-hx-KXP" firstAttribute="top" secondItem="cOO-W4-y6N" secondAttribute="bottom" constant="38" id="49U-TK-rW9"/>
+                            <constraint firstItem="cOO-W4-y6N" firstAttribute="top" secondItem="KD2-So-x0b" secondAttribute="bottom" constant="55" id="Fqk-00-Mju"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KD2-So-x0b" secondAttribute="leading" id="Kda-1R-AA8"/>
+                            <constraint firstItem="NfT-hx-KXP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Swz-rK-Imu"/>
+                            <constraint firstItem="KD2-So-x0b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fwg-d4-F4O"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cOO-W4-y6N" secondAttribute="leading" id="lAT-Oc-cY2"/>
+                            <constraint firstItem="cOO-W4-y6N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pZD-lg-DD6"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NfT-hx-KXP" secondAttribute="leading" id="pmy-5V-ZbN"/>
+                            <constraint firstItem="KD2-So-x0b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tAG-go-Eaj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GetReady" destination="KD2-So-x0b" id="6Tv-uC-n9d"/>
+                        <outlet property="TimerLabel" destination="NfT-hx-KXP" id="hC5-dJ-pGC"/>
+                        <outlet property="startButton" destination="cOO-W4-y6N" id="cnD-kk-ziw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="312"/>
+        </scene>
+    </scenes>
+</document>

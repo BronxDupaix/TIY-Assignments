@@ -15,6 +15,7 @@ class HeroInfoViewController: UIViewController {
     @IBOutlet weak var heroHome: UILabel!
     
     @IBOutlet weak var heroPowers: UILabel!
+    
     var hero: Hero?
     
     
