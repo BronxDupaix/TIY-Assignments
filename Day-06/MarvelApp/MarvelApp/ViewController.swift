@@ -106,14 +106,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                             
                             if let name = jsonResult["name"] as? String {
                                 hero.name = name
+                                
+                                print(name)
                             }
                             
                             if let homeworld = jsonResult["homeworld"] as? String {
                                 hero.homeworld = homeworld
+                                
+                                print(homeworld)
                             }
                             
                             if let powers = jsonResult["powers"] as? String {
                                 hero.powers = powers
+                                
+                                print(powers) 
                             }
                             
                             self.herosArray.append(hero)

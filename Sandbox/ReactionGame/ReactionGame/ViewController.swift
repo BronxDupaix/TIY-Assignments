@@ -47,6 +47,7 @@ class ViewController: UIViewController {
             TimerLabel.text = String(scoreInt)
             
             timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
+            
             sender.setTitle("Start", forState: UIControlState.Normal)
             
         }else{

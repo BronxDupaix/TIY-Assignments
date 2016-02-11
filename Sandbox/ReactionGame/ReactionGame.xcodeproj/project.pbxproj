@@ -7,31 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA09FCAA1C695E96006FAE03 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA09FCA91C695E96006FAE03 /* Hero.swift */; };
-		CA49379B1C692CDD00E5F4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49379A1C692CDD00E5F4D6 /* AppDelegate.swift */; };
-		CA49379D1C692CDD00E5F4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49379C1C692CDD00E5F4D6 /* ViewController.swift */; };
-		CA4937A01C692CDD00E5F4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA49379E1C692CDD00E5F4D6 /* Main.storyboard */; };
-		CA4937A21C692CDD00E5F4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4937A11C692CDD00E5F4D6 /* Assets.xcassets */; };
-		CA4937A51C692CDD00E5F4D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4937A31C692CDD00E5F4D6 /* LaunchScreen.storyboard */; };
-		CA4937AD1C69339B00E5F4D6 /* HeroInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4937AC1C69339B00E5F4D6 /* HeroInfoViewController.swift */; };
-		CA4937D31C6948DF00E5F4D6 /* heros.json in Resources */ = {isa = PBXBuildFile; fileRef = CA4937D21C6948DF00E5F4D6 /* heros.json */; };
+		CA2F969B1C6B057800936B14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2F969A1C6B057800936B14 /* AppDelegate.swift */; };
+		CA2F969D1C6B057800936B14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2F969C1C6B057800936B14 /* ViewController.swift */; };
+		CA2F96A01C6B057800936B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2F969E1C6B057800936B14 /* Main.storyboard */; };
+		CA2F96A21C6B057800936B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2F96A11C6B057800936B14 /* Assets.xcassets */; };
+		CA2F96A51C6B057800936B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2F96A31C6B057800936B14 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA09FCA91C695E96006FAE03 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
-		CA4937971C692CDD00E5F4D6 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA49379A1C692CDD00E5F4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA49379C1C692CDD00E5F4D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA49379F1C692CDD00E5F4D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA4937A11C692CDD00E5F4D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CA4937A41C692CDD00E5F4D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CA4937A61C692CDD00E5F4D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA4937AC1C69339B00E5F4D6 /* HeroInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroInfoViewController.swift; sourceTree = "<group>"; };
-		CA4937D21C6948DF00E5F4D6 /* heros.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heros.json; sourceTree = "<group>"; };
+		CA2F96971C6B057800936B14 /* ReactionGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactionGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2F969A1C6B057800936B14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA2F969C1C6B057800936B14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA2F969F1C6B057800936B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA2F96A11C6B057800936B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA2F96A41C6B057800936B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA2F96A61C6B057800936B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CA4937941C692CDD00E5F4D6 /* Frameworks */ = {
+		CA2F96941C6B057800936B14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,75 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA49378E1C692CDD00E5F4D6 = {
+		CA2F968E1C6B057800936B14 = {
 			isa = PBXGroup;
 			children = (
-				CA4937991C692CDD00E5F4D6 /* MarvelApp */,
-				CA4937981C692CDD00E5F4D6 /* Products */,
+				CA2F96991C6B057800936B14 /* ReactionGame */,
+				CA2F96981C6B057800936B14 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CA4937981C692CDD00E5F4D6 /* Products */ = {
+		CA2F96981C6B057800936B14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA4937971C692CDD00E5F4D6 /* MarvelApp.app */,
+				CA2F96971C6B057800936B14 /* ReactionGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA4937991C692CDD00E5F4D6 /* MarvelApp */ = {
+		CA2F96991C6B057800936B14 /* ReactionGame */ = {
 			isa = PBXGroup;
 			children = (
-				CA49379A1C692CDD00E5F4D6 /* AppDelegate.swift */,
-				CA49379C1C692CDD00E5F4D6 /* ViewController.swift */,
-				CA09FCA91C695E96006FAE03 /* Hero.swift */,
-				CA49379E1C692CDD00E5F4D6 /* Main.storyboard */,
-				CA4937AC1C69339B00E5F4D6 /* HeroInfoViewController.swift */,
-				CA4937D21C6948DF00E5F4D6 /* heros.json */,
-				CA4937A11C692CDD00E5F4D6 /* Assets.xcassets */,
-				CA4937A31C692CDD00E5F4D6 /* LaunchScreen.storyboard */,
-				CA4937A61C692CDD00E5F4D6 /* Info.plist */,
+				CA2F969A1C6B057800936B14 /* AppDelegate.swift */,
+				CA2F969C1C6B057800936B14 /* ViewController.swift */,
+				CA2F969E1C6B057800936B14 /* Main.storyboard */,
+				CA2F96A11C6B057800936B14 /* Assets.xcassets */,
+				CA2F96A31C6B057800936B14 /* LaunchScreen.storyboard */,
+				CA2F96A61C6B057800936B14 /* Info.plist */,
 			);
-			path = MarvelApp;
+			path = ReactionGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA4937961C692CDD00E5F4D6 /* MarvelApp */ = {
+		CA2F96961C6B057800936B14 /* ReactionGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA4937A91C692CDD00E5F4D6 /* Build configuration list for PBXNativeTarget "MarvelApp" */;
+			buildConfigurationList = CA2F96A91C6B057800936B14 /* Build configuration list for PBXNativeTarget "ReactionGame" */;
 			buildPhases = (
-				CA4937931C692CDD00E5F4D6 /* Sources */,
-				CA4937941C692CDD00E5F4D6 /* Frameworks */,
-				CA4937951C692CDD00E5F4D6 /* Resources */,
+				CA2F96931C6B057800936B14 /* Sources */,
+				CA2F96941C6B057800936B14 /* Frameworks */,
+				CA2F96951C6B057800936B14 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MarvelApp;
-			productName = MarvelApp;
-			productReference = CA4937971C692CDD00E5F4D6 /* MarvelApp.app */;
+			name = ReactionGame;
+			productName = ReactionGame;
+			productReference = CA2F96971C6B057800936B14 /* ReactionGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA49378F1C692CDD00E5F4D6 /* Project object */ = {
+		CA2F968F1C6B057800936B14 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Bronson Dupaix";
 				TargetAttributes = {
-					CA4937961C692CDD00E5F4D6 = {
+					CA2F96961C6B057800936B14 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = R99S6E3AYJ;
 					};
 				};
 			};
-			buildConfigurationList = CA4937921C692CDD00E5F4D6 /* Build configuration list for PBXProject "MarvelApp" */;
+			buildConfigurationList = CA2F96921C6B057800936B14 /* Build configuration list for PBXProject "ReactionGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,57 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = CA49378E1C692CDD00E5F4D6;
-			productRefGroup = CA4937981C692CDD00E5F4D6 /* Products */;
+			mainGroup = CA2F968E1C6B057800936B14;
+			productRefGroup = CA2F96981C6B057800936B14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA4937961C692CDD00E5F4D6 /* MarvelApp */,
+				CA2F96961C6B057800936B14 /* ReactionGame */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CA4937951C692CDD00E5F4D6 /* Resources */ = {
+		CA2F96951C6B057800936B14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA4937A51C692CDD00E5F4D6 /* LaunchScreen.storyboard in Resources */,
-				CA4937A21C692CDD00E5F4D6 /* Assets.xcassets in Resources */,
-				CA4937A01C692CDD00E5F4D6 /* Main.storyboard in Resources */,
-				CA4937D31C6948DF00E5F4D6 /* heros.json in Resources */,
+				CA2F96A51C6B057800936B14 /* LaunchScreen.storyboard in Resources */,
+				CA2F96A21C6B057800936B14 /* Assets.xcassets in Resources */,
+				CA2F96A01C6B057800936B14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA4937931C692CDD00E5F4D6 /* Sources */ = {
+		CA2F96931C6B057800936B14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA49379D1C692CDD00E5F4D6 /* ViewController.swift in Sources */,
-				CA49379B1C692CDD00E5F4D6 /* AppDelegate.swift in Sources */,
-				CA4937AD1C69339B00E5F4D6 /* HeroInfoViewController.swift in Sources */,
-				CA09FCAA1C695E96006FAE03 /* Hero.swift in Sources */,
+				CA2F969D1C6B057800936B14 /* ViewController.swift in Sources */,
+				CA2F969B1C6B057800936B14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA49379E1C692CDD00E5F4D6 /* Main.storyboard */ = {
+		CA2F969E1C6B057800936B14 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA49379F1C692CDD00E5F4D6 /* Base */,
+				CA2F969F1C6B057800936B14 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CA4937A31C692CDD00E5F4D6 /* LaunchScreen.storyboard */ = {
+		CA2F96A31C6B057800936B14 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA4937A41C692CDD00E5F4D6 /* Base */,
+				CA2F96A41C6B057800936B14 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -175,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CA4937A71C692CDD00E5F4D6 /* Debug */ = {
+		CA2F96A71C6B057800936B14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		CA4937A81C692CDD00E5F4D6 /* Release */ = {
+		CA2F96A81C6B057800936B14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,29 +244,29 @@
 			};
 			name = Release;
 		};
-		CA4937AA1C692CDD00E5F4D6 /* Debug */ = {
+		CA2F96AA1C6B057800936B14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = MarvelApp/Info.plist;
+				INFOPLIST_FILE = ReactionGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BronxDupaix.MarvelApp;
+				PRODUCT_BUNDLE_IDENTIFIER = BronxDupaix.ReactionGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
-		CA4937AB1C692CDD00E5F4D6 /* Release */ = {
+		CA2F96AB1C6B057800936B14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = MarvelApp/Info.plist;
+				INFOPLIST_FILE = ReactionGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BronxDupaix.MarvelApp;
+				PRODUCT_BUNDLE_IDENTIFIER = BronxDupaix.ReactionGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -287,25 +275,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA4937921C692CDD00E5F4D6 /* Build configuration list for PBXProject "MarvelApp" */ = {
+		CA2F96921C6B057800936B14 /* Build configuration list for PBXProject "ReactionGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA4937A71C692CDD00E5F4D6 /* Debug */,
-				CA4937A81C692CDD00E5F4D6 /* Release */,
+				CA2F96A71C6B057800936B14 /* Debug */,
+				CA2F96A81C6B057800936B14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA4937A91C692CDD00E5F4D6 /* Build configuration list for PBXNativeTarget "MarvelApp" */ = {
+		CA2F96A91C6B057800936B14 /* Build configuration list for PBXNativeTarget "ReactionGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA4937AA1C692CDD00E5F4D6 /* Debug */,
-				CA4937AB1C692CDD00E5F4D6 /* Release */,
+				CA2F96AA1C6B057800936B14 /* Debug */,
+				CA2F96AB1C6B057800936B14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CA49378F1C692CDD00E5F4D6 /* Project object */;
+	rootObject = CA2F968F1C6B057800936B14 /* Project object */;
 }
