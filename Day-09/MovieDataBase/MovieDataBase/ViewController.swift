@@ -44,9 +44,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: Segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "movieInfoSegue" {
-            let viewcontrollower = segue.destinationViewController as? MovieInfoViewController
+            let viewcontroller = segue.destinationViewController as? MovieInfoViewController
             
-            viewcontrollower?.movie = self.currentMovie
+            viewcontroller?.movie = self.currentMovie
         }
     }
     

@@ -1,25 +1,27 @@
 //
 //  ViewController.swift
-//  Calculator
+//  Calculator3.0
 //
-//  Created by Bronson Dupaix on 2/10/16.
+//  Created by Bronson Dupaix on 2/14/16.
 //  Copyright © 2016 Bronson Dupaix. All rights reserved.
-
-
-// func updateUI() {
-// var brain = CalcBrain() 
+//
 
 import UIKit
 
 class ViewController: UIViewController {
-    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
     var value1: Double = 0
     
     var value2: Double = 0
     
     var runningTotal: Double = 0
     
-    var operationType: String = ""
+    var operation: String = ""
     
     var hasPerformedCalculation: Bool = false
     
@@ -29,17 +31,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var displayLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
     
     
     
     
-    
-    
-    @IBAction func numberTapped(sender: UIButton) {
+    @IBAction func numbers(sender: UIButton) {
         
         if hasPerformedCalculation == true {
             self.displayLabel.text = "0"
@@ -61,9 +57,9 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func divideButtonTapped(sender: UIButton) {
+    @IBAction func divide(sender: UIButton) {
         
-        operationType = "/"
+        operation = "/"
         
         value2 = self.convertStringToDouble(self.displayLabel?.text)
         
@@ -88,9 +84,9 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func timesButtonTapped(sender: UIButton) {
+    @IBAction func multiply(sender: UIButton) {
         
-        operationType = "*"
+        operation = "*"
         
         value2 = self.convertStringToDouble(self.displayLabel?.text)
         
@@ -117,9 +113,9 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func minusButtonTapped(sender: UIButton) {
+    @IBAction func subtraction(sender: UIButton) {
         
-        operationType = "-"
+        operation = "-"
         
         value2 = self.convertStringToDouble(self.displayLabel?.text)
         
@@ -148,9 +144,11 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func addButtonTapped(sender: UIButton) {
+    @IBAction func addition(sender: UIButton) {
         
-        operationType = "+"
+        func add(){
+        
+        operation = "+"
         
         value2 = self.convertStringToDouble(self.displayLabel?.text)
         
@@ -160,6 +158,8 @@ class ViewController: UIViewController {
         
         hasPerformedCalculation = true
         self.displayLabel?.text = "\(runningTotal)"
+        }
+        add()
     }
     
     
@@ -167,7 +167,7 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func equalButtonTapped(sender: UIButton) {
+    @IBAction func equals(sender: UIButton) {
         
         //        if operationType == + {
         //        addButtonTapped()
@@ -185,7 +185,7 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func clearButton(sender: AnyObject) {
+    @IBAction func clear(sender: AnyObject) {
         func clear() {
             
             value1 = 0
@@ -216,4 +216,6 @@ class ViewController: UIViewController {
     }
 
 
-   }
+
+}
+

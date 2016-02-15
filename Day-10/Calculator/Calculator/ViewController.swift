@@ -2,17 +2,14 @@
 //  ViewController.swift
 //  Calculator
 //
-//  Created by Bronson Dupaix on 2/10/16.
-//  Copyright © 2016 Bronson Dupaix. All rights reserved.
-
-
-// func updateUI() {
-// var brain = CalcBrain() 
+//  Created by Phil Wright on 2/10/16.
+//  Copyright © 2016 Phil Wright. All rights reserved.
+//
 
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     var value1: Double = 0
     
     var value2: Double = 0
@@ -25,7 +22,7 @@ class ViewController: UIViewController {
     
     var valueHasntChanged: Bool = false
     
-    
+
     
     @IBOutlet weak var displayLabel: UILabel!
     
@@ -47,7 +44,7 @@ class ViewController: UIViewController {
         }
         
         let labelText = self.displayLabel?.text
-        
+    
         if labelText != nil && labelText != "" {
             
             if labelText == "0" {
@@ -116,13 +113,13 @@ class ViewController: UIViewController {
     
     
     
-    
+
     @IBAction func minusButtonTapped(sender: UIButton) {
         
         operationType = "-"
         
         value2 = self.convertStringToDouble(self.displayLabel?.text)
-        
+            
         runningTotal = value1 - value2
         
         if valueHasntChanged == false{
@@ -133,12 +130,12 @@ class ViewController: UIViewController {
         }
         
         value1 = runningTotal
-        
+            
         
         hasPerformedCalculation = true
         self.displayLabel?.text = "\(runningTotal)"
         
-        
+ 
         
         print("Minus Button Tapped")
     }
@@ -163,21 +160,21 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
+
+
     
     
     @IBAction func equalButtonTapped(sender: UIButton) {
         
-        //        if operationType == + {
-        //        addButtonTapped()
-        //        }
+//        if operationType == + {
+//        addButtonTapped()
+//        }
         
-        //        switch {
-        //            case
-        //        }
+//        switch {
+//            case
+//        }
         
-        print("Equals Button Tapped")
+        print("Equals Button Tapped")        
     }
     
     
@@ -186,24 +183,24 @@ class ViewController: UIViewController {
     
     
     @IBAction func clearButton(sender: AnyObject) {
-        func clear() {
-            
-            value1 = 0
-            value2 = 0
-            runningTotal = 0
-            
-            valueHasntChanged = false
-            
-            self.displayLabel?.text = ""
-        }
-        clear()
+    func clear() {
+
+        value1 = 0
+        value2 = 0
+        runningTotal = 0
         
+        valueHasntChanged = false
+        
+        self.displayLabel?.text = ""
+    }
+        clear()
+    
     }
     
     
     
     func convertStringToDouble(str: String?) -> Double {
-        
+
         var returnDouble: Double = 0
         
         if str == nil || str == "" {
@@ -214,6 +211,5 @@ class ViewController: UIViewController {
         
         return returnDouble
     }
-
-
-   }
+    
+}
