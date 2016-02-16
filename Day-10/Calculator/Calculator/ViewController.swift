@@ -72,6 +72,7 @@ class ViewController: UIViewController {
             runningTotal = value2
             
             valueHasntChanged = true
+            
         }
         
         value1 = runningTotal
@@ -166,6 +167,7 @@ class ViewController: UIViewController {
     
     @IBAction func equalButtonTapped(sender: UIButton) {
         
+        operationType = "="
 //        if operationType == + {
 //        addButtonTapped()
 //        }
@@ -188,6 +190,7 @@ class ViewController: UIViewController {
         value1 = 0
         value2 = 0
         runningTotal = 0
+        
         
         valueHasntChanged = false
         

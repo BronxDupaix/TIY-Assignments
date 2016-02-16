@@ -1,0 +1,60 @@
+
+{
+"characters" :[
+{
+"name": "Chewbacca",
+"homeworld" : "Kashyyyk",
+"overview" : "Chewbacca (or Chewie, as he was known by his friends) was a Wookiee male warrior, smuggler and co-pilot of Han Solo's starship, the Millennium Falcon. Originating from the Mid Rim planet of Kashyyyk, Chewbacca was a veteran of the Clone Wars and a hero of the Alliance to Restore the Republic. He fought in several battles of the Galactic Civil War, including the Battle of Yavin, the Battle of Hoth and the Battle of Endor.",
+"photo" : "chewbacca",
+
+"name" : "Han Solo",
+"homeworld" : "Corellia",
+"overview" : "Han Solo was a human male smuggler who became a leader in the Alliance to Restore the Republic and an instrumental figure in the defeat of the Galactic Empire during the Galactic Civil War. He hailed from Corellia and became the best smuggler in the employ of Jabba the Hutt, even completing the Kessel Run in less than twelve parsecs with his prized ship, the Millennium Falcon.",
+"photo" : "hanSolo",
+
+"name": "Rey",
+"homeworld": "Jakku",
+"overview": "Rey was a human female scavenger who discovered her latent Force-sensitivity while on a quest to find the legendary Jedi Master Luke Skywalker and bring a new hope to a galaxy on the brink of war. Rey grew up in the wastes of the desert planet Jakku, where she was left by her family for reasons unknown to her.",
+"photo": "rey",
+
+"name": "Finn",
+"homeworld": "unknown",
+"overview": "Finn was a human male who served as a First Order stormtrooper, designation FN-2187 and known to his fellow soldiers as Eight-Seven. He was considered one of the group's best stormtroopers before he deserted to join the Resistance in their struggle against the First Order.",
+"photo": "finn",
+
+"name": "Poe Dameron",
+"homeworld":"Yavin 4",
+"overview":"Poe Dameron was a human male starfighter pilot who served the New Republic and, later, the Resistance during its conflict with the First Order. He was born the son of Lieutenant Shara Bey and Sergeant Kes Dameron of the Alliance to Restore the Republic, Dameron followed in his late mother's footsteps and became a pilot, serving the New Republic Starfleet as the commander of Rapier Squadron.",
+"photo":"poe",
+
+"name": "Leia Organa",
+"homeworld":"Alderaan",
+"overview":"Leia Organa was a Force-sensitive human female who served as the princess of Alderaan, a member of the Imperial Senate, a leader in the Alliance to Restore the Republic and New Republic, and the founding general of the Resistance. Through it all, she became instrumental in the defeat of the Galactic Empire in the Galactic Civil War and led the fight against the First Order.",
+"photo":"leia",
+
+"name": "Kylo Ren",
+"homeworld":"unknown",
+"overview":"Kylo Ren was a Force-sensitive human male who trained as a Jedi pupil under Jedi Master Luke Skywalker before turning to the dark side of the Force and joining the Knights of Ren. He was born with the name Ben to Princess Leia Organa and the smuggler Han Solo. In his youth, he displayed traits similar to that of his grandfather, Anakin Skywalker, who had turned to the dark side and became the Sith Lord Darth Vader. Ben, who was sent by Organa to be trained by his uncle, fell under the influence of Supreme Leader Snoke of the First Order and destroyed the new generation of Jedi that Luke Skywalker was training.",
+"photo": "kylo",
+
+
+"name": "General Hux",
+"homeworld":"unknown",
+"overview":"Hux was a human male who served as a General in the First Order approximately thirty years following the Battle of Endor. A young, ruthless officer, he had complete confidence in his troops, training methods and weapons. Serving under Supreme Leader Snoke, Hux was one of the highest-ranking members of the First Order, and the commander of the superweapon known as the Starkiller.",
+"photo": "hux",
+
+
+"name": "Luke Skywalker",
+"homeworld":"Tatooine",
+"overview":"Luke Skywalker was a Force-sensitive Human male Jedi Master. He was the son of fallen Jedi Knight Anakin Skywalker and Senator Padmé Amidala, the grandson of Shmi Skywalker Lars, the step-nephew to Owen and Beru Lars, the twin brother of Leia Organa and uncle of Ben. Born on the asteroid Polis Massa, Luke's mother died in labor, and the twins were thought to never have been born by his father, the recently christened Sith Lord Darth Vader. Skywalker was separated from his sister and taken by Jedi Master Obi-Wan Kenobi to the planet Tatooine to be raised by the Lars family, hidden from the Galactic Empire.",
+"photo":"luke",
+
+
+"name": "BB-8",
+"homeworld": "unknown",
+"overview":"A BB unit astromech droid[1] who operated approximately thirty years after the Battle of Endor,[7] BB-8 became the companion of New Republic Commander and flight leader of Rapier Squadron, Poe Dameron.[5] BB-8 followed its master when he left the New Republic fleet and joined the Resistance.",
+"photo":"BB-8",
+
+}
+]
+}

@@ -16,12 +16,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         var movieArray = [MovieDB]()
     
         var currentMovie: MovieDB?
+    
     // MARK: Table Functions
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movieArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         self.currentMovie = self.movieArray[indexPath.row]
         
         let cell = UITableViewCell()

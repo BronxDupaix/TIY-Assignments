@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3A40C11C72E60E007A0829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0B4001C6D09A300F200C4 /* ViewController.swift */; };
 		CAF0B3FF1C6D09A300F200C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0B3FE1C6D09A300F200C4 /* AppDelegate.swift */; };
-		CAF0B4011C6D09A300F200C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0B4001C6D09A300F200C4 /* ViewController.swift */; };
 		CAF0B4041C6D09A300F200C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF0B4021C6D09A300F200C4 /* Main.storyboard */; };
 		CAF0B4061C6D09A300F200C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF0B4051C6D09A300F200C4 /* Assets.xcassets */; };
 		CAF0B4091C6D09A300F200C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF0B4071C6D09A300F200C4 /* LaunchScreen.storyboard */; };
@@ -147,8 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAF0B4131C6D130300F200C4 /* MovieDB.swift in Sources */,
-				CAF0B4011C6D09A300F200C4 /* ViewController.swift in Sources */,
 				CAF0B3FF1C6D09A300F200C4 /* AppDelegate.swift in Sources */,
+				CA3A40C11C72E60E007A0829 /* ViewController.swift in Sources */,
 				CAF0B4151C6D31B900F200C4 /* MovieInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +297,7 @@
 				CAF0B40F1C6D09A300F200C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
