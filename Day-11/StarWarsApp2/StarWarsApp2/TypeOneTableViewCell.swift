@@ -11,10 +11,13 @@ import UIKit
 class TypeOneTableViewCell: UITableViewCell {
 
     @IBOutlet weak var profileImage: UIImageView!
-    
+
     @IBOutlet weak var nameLabel: UILabel!
     
+    
     @IBOutlet weak var descriptionLabel: UILabel!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

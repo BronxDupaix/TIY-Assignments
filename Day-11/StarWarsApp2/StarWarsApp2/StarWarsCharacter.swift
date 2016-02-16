@@ -13,7 +13,7 @@ class StarWarsCharacter{
     var name: String
     var homeworld: String
     var overview: String
-    var photo: String 
+    var photo: String
     
     init(name: String, homeworld: String, overview: String, photo: String){
     

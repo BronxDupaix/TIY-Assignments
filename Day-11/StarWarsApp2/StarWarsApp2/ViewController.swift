@@ -13,7 +13,7 @@ typealias JSONArray = [JSONDictionary]
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var characterArray = [StarWarsCharacter]()
+    var characterArray = [StarWarsCharacter]() 
     
     var currentCharacter: StarWarsCharacter?
 
@@ -60,9 +60,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell?.descriptionLabel?.text = "\(overview)"
         
-        cell?.profileImage?.image = UIImage(named: "photo")
+        cell?.profileImage?.image = UIImage(named: "\(photo)")
         
-        return cell! 
+        return cell!
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,6 +72,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.currentCharacter = characterArray[indexPath.row]
     }
+    
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 200.0
+    }
+    
+    
     func parseJSON(dict: JSONDictionary) {
         
         print("\n\nDictionary\n\n \(dict)")
@@ -98,18 +105,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     }
                     
                     if let homeworld = character["homeworld"] as? String {
+                        
                         details.homeworld = homeworld
                         
                         print(homeworld)
                     }
                     
                     if let overview = character["overview"] as? String {
+                        
                         details.overview = overview
+                        
                         print(overview)
                     }
                     if let photo = character["photo"] as? String {
+                        
                         details.photo = photo
                     }
+                    
                     self.characterArray.append(details)
           
                 }
