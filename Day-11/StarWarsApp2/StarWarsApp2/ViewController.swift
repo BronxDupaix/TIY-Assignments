@@ -26,9 +26,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         
-        if let data = data {
+        if let jsondata = data {
             do {
-                let object = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+                let object = try NSJSONSerialization.JSONObjectWithData(jsondata, options: .AllowFragments)
                 
                 if let dict = object as? JSONDictionary {
                     
@@ -46,23 +46,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        self.currentCharacter = self.characterArray[indexPath.row]
+        let c = self.characterArray[indexPath.row]
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("TypeOneCell", forIndexPath: indexPath) as? TypeOneTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("TypeOneCell", forIndexPath: indexPath) as! TypeOneTableViewCell
         
-        let name = self.currentCharacter!.name
+        let name = c.name
         
-        let overview = self.currentCharacter!.overview
+        let overview = c.overview
         
-        let photo = self.currentCharacter!.photo
+        let photo = c.photo
         
-        cell?.nameLabel?.text = "\(name)"
+        cell.nameLabel?.text = "\(name)"
         
-        cell?.descriptionLabel?.text = "\(overview)"
+        cell.descriptionLabel?.text = "\(overview)"
         
-        cell?.profileImage?.image = UIImage(named: "\(photo)")
+        cell.profileImage?.image = UIImage(named: "\(photo)")
         
-        return cell!
+        return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
