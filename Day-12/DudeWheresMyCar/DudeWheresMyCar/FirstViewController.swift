@@ -10,6 +10,14 @@ import UIKit
 
 class FirstViewController: UIViewController, UITextFieldDelegate {
 
+    
+    var redColorValue: Float = 1.0
+    
+    var blueColorValue: Float = 0.2
+    
+    var greenColorValue: Float = 0.2
+    
+    
     @IBAction func saveButtonTapped(sender: AnyObject) {
         
         saveDefaults()
@@ -20,10 +28,33 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         loadDefaults()
+    
+        
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        changeBackgroundColor()
+    }
+    
+    func changeBackgroundColor(){
+        
+        
+        let color = UIColor(red: CGFloat(Config.sharedInstance.redColorValue), green: CGFloat(Config.sharedInstance.greenColorValue), blue: CGFloat(Config.sharedInstance.blueColorValue), alpha: 1.0)
+        
+        
+        
+        self.view.backgroundColor = color
+        
+    }
+    
+    
 
+
+    
+    
     
     @IBOutlet weak var makeTextField: UITextField!
 
@@ -43,61 +74,46 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     
     
     
-//    func textFieldShouldReturn(textField: UITextField) -> Bool {
-//        
-//    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder() 
+        
+        return true
+    } 
+    
+    
     
     func saveDefaults(){
         
-        let defaults = NSUserDefaults.standardUserDefaults()
+        Config.sharedInstance.make = self.makeTextField.text
         
-        defaults.setObject(NSDate(), forKey: "PreviouslyUsed")
+        Config.sharedInstance.model = self.modelTextField.text
         
-        defaults.setValue(self.makeTextField.text, forKey: "Make")
+        Config.sharedInstance.year = self.yearTextField.text
         
-        defaults.setValue(self.modelTextField.text, forKey: "Model")
+        Config.sharedInstance.licensePlate = self.liscencePlateTextField.text
         
-        defaults.setValue(self.yearTextField.text, forKey: "Year")
-        
-        defaults.setValue(self.liscencePlateTextField.text, forKey: "LiscencePlate")
-        
-        defaults.synchronize()
-        
-        
-        
+        Config.sharedInstance.saveConfiguration() 
     }
     
     func loadDefaults() {
         
-        let defaults = NSUserDefaults.standardUserDefaults()
+        Config.sharedInstance.loadConfiguation()
+     
+        self.makeTextField.text = Config.sharedInstance.make
         
-        let today = defaults.objectForKey("PreviouslyUsed") as? NSDate
+        self.modelTextField.text = Config.sharedInstance.model
         
-        if today != nil{
-            
-            let makeString = defaults.valueForKey("Make") as! String
-            
-            self.makeTextField?.text = makeString
-            
-            
-            
-            self.modelTextField.text = defaults.valueForKey("Model") as? String
-            
-            self.yearTextField.text = defaults.valueForKey("Year") as? String
-            
-            self.liscencePlateTextField.text = defaults.valueForKey("LiscencePlate") as? String
+        self.yearTextField.text = Config.sharedInstance.year
+        
+        self.liscencePlateTextField.text = Config.sharedInstance.licensePlate
+        
+        
             
             
-            
-            
-            
-        } else {
-            print("No defaults have been saved")
         }
 
         
     }
 
-
-}
 

@@ -15,6 +15,8 @@
 		CA3A40E11C739015007A0829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3A40DF1C739015007A0829 /* LaunchScreen.storyboard */; };
 		CA3A40EB1C7399B1007A0829 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A40EA1C7399B1007A0829 /* SettingsTableViewController.swift */; };
 		CA3A40ED1C73A401007A0829 /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A40EC1C73A401007A0829 /* ColorTableViewCell.swift */; };
+		CAEC78B41C74E03C004F8C49 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC78B31C74E03C004F8C49 /* Config.swift */; };
+		CAEC78D61C750D3F004F8C49 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEC78D51C750D3F004F8C49 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		CA3A40E21C739015007A0829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3A40EA1C7399B1007A0829 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CA3A40EC1C73A401007A0829 /* ColorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		CAEC78B31C74E03C004F8C49 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CAEC78D51C750D3F004F8C49 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEC78D61C750D3F004F8C49 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,7 @@
 		CA3A40C81C739014007A0829 = {
 			isa = PBXGroup;
 			children = (
+				CAEC78D51C750D3F004F8C49 /* MapKit.framework */,
 				CA3A40D31C739015007A0829 /* DudeWheresMyCar */,
 				CA3A40D21C739014007A0829 /* Products */,
 			);
@@ -65,6 +71,7 @@
 				CA3A40D81C739015007A0829 /* SecondViewController.swift */,
 				CA3A40DA1C739015007A0829 /* Main.storyboard */,
 				CA3A40EC1C73A401007A0829 /* ColorTableViewCell.swift */,
+				CAEC78B31C74E03C004F8C49 /* Config.swift */,
 				CA3A40EA1C7399B1007A0829 /* SettingsTableViewController.swift */,
 				CA3A40DD1C739015007A0829 /* Assets.xcassets */,
 				CA3A40DF1C739015007A0829 /* LaunchScreen.storyboard */,
@@ -106,6 +113,11 @@
 					CA3A40D01C739014007A0829 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = R99S6E3AYJ;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -150,6 +162,7 @@
 				CA3A40D91C739015007A0829 /* SecondViewController.swift in Sources */,
 				CA3A40D51C739015007A0829 /* AppDelegate.swift in Sources */,
 				CA3A40D71C739015007A0829 /* FirstViewController.swift in Sources */,
+				CAEC78B41C74E03C004F8C49 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +273,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DudeWheresMyCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BronxDupaix.DudeWheresMyCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -271,10 +287,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DudeWheresMyCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BronxDupaix.DudeWheresMyCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -297,6 +315,7 @@
 				CA3A40E71C739015007A0829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

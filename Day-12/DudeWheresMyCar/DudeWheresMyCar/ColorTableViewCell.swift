@@ -9,6 +9,7 @@
 import UIKit
 
 class ColorTableViewCell: UITableViewCell {
+    
 
     @IBOutlet weak var redSlider: UISlider!
     
@@ -78,42 +79,26 @@ class ColorTableViewCell: UITableViewCell {
     func saveDefaults(){
         
         
-    
-    let defaults = NSUserDefaults.standardUserDefaults()
+    Config.sharedInstance.redColorValue = redColorValue
         
-        defaults.setObject(NSDate(), forKey: "LastTimeUsed")
-    
-    defaults.setFloat(self.redColorValue, forKey: "RedKey")
-    
-    defaults.setFloat(self.blueColorValue, forKey: "BlueKey")
-    
-    defaults.setFloat(self.greenColorValue, forKey: "GreenKey")
-    
-    defaults.synchronize()
-    }
+    Config.sharedInstance.blueColorValue = blueColorValue
+        
+    Config.sharedInstance.greenColorValue = greenColorValue
+        
+    Config.sharedInstance.saveConfiguration()
+        
+        }
     
     func loadDefaults(){
-        let defaults = NSUserDefaults.standardUserDefaults()
         
-        let today = defaults.objectForKey("LastTimeUsed") as? NSDate
+        Config.sharedInstance.loadConfiguation()
         
-        if today != nil{
+        self.redColorValue = Config.sharedInstance.redColorValue
         
-        self.blueColorValue = defaults.floatForKey("BlueKey")
+        self.blueColorValue = Config.sharedInstance.blueColorValue
         
-        self.redColorValue = defaults.floatForKey("RedKey")
-        
-        self.greenColorValue = defaults.floatForKey("GreenKey")
-            
-            self.redSlider.value = self.redColorValue
-            self.blueSlider.value = self.blueColorValue
-            self.greenSlider.value = self.greenColorValue
-            
-            
-            
-        }else {
-            print("No defaults have been saved")
+        self.greenColorValue = Config.sharedInstance.greenColorValue
+
         }
         
     }
-}
