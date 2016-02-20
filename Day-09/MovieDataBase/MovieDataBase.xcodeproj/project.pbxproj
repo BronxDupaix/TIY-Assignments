@@ -62,10 +62,10 @@
 			children = (
 				CAF0B3FE1C6D09A300F200C4 /* AppDelegate.swift */,
 				CAF0B4001C6D09A300F200C4 /* ViewController.swift */,
+				CAF0B4141C6D31B900F200C4 /* MovieInfoViewController.swift */,
 				CAF0B4121C6D130300F200C4 /* MovieDB.swift */,
 				CAF0B4101C6D0BD900F200C4 /* moviedb.json */,
 				CAF0B4021C6D09A300F200C4 /* Main.storyboard */,
-				CAF0B4141C6D31B900F200C4 /* MovieInfoViewController.swift */,
 				CAF0B4051C6D09A300F200C4 /* Assets.xcassets */,
 				CAF0B4071C6D09A300F200C4 /* LaunchScreen.storyboard */,
 				CAF0B40A1C6D09A300F200C4 /* Info.plist */,

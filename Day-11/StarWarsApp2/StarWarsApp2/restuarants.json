@@ -1,0 +1,65 @@
+{
+	"restuarants": [
+
+
+		{
+			"name": "Cafe Rio",
+			"style": "mexican",
+			"address": "1234 state street",
+			"ourRating": "4",
+			"description": "better than chipotle",
+			"menu": [{
+				"menuName": "entrees",
+
+				"dishes": [{
+						"dishname": "Smothered Burrito",
+						"description": "deliciousness",
+						"photo": "cafeRioBurrito"
+					}, {
+						"dishname": "Enchiladas",
+						"description": "also deliciousness",
+						"photo": "cafeRioEnchilada"
+					}, {
+						"dishname": "Fish Tacos",
+						"description": "why would you order this?",
+						"photo": "cafeRioFish"
+					}
+
+				]
+
+			}]
+
+		},
+
+		{
+			"name": "Chipotle",
+			"style": "mexican",
+			"address": "1234 state street",
+			"ourRating": "2.5",
+			"description": "worse than Cafe Rio thats all you need to know",
+			"menu": [{
+				"menuName": "entrees",
+
+				"dishes": [{
+						"dishname": "teribbleBurrito",
+						"description": "deliciousness",
+						"photo": "cafeRioBurrito"
+					}, {
+						"dishname": "Enchiladas",
+						"description": "also deliciousness",
+						"photo": "cafeRioEnchilada"
+					}, {
+						"dishname": "Fish Tacos",
+						"description": "why would you order this?",
+						"photo": "cafeRioFish"
+					}
+
+				]
+
+			}]
+
+		}
+
+
+	]
+}

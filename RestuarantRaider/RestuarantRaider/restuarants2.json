@@ -1,0 +1,9 @@
+{
+    "restuarants": [{
+                    "name": "Cafe Rio",
+                    "style": "mexican",
+                    "address": "123 Road Street",
+                    "ourRating": 4,
+                    "description": "this is the description"
+                    }]
+}
