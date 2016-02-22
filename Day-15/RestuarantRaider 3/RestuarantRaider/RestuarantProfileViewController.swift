@@ -38,15 +38,22 @@ class RestuarantProfileViewController: UIViewController, CLLocationManagerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let longitude = restuarant?.longitude
+        let longitude = restuarant!.longitude
         
-        let latitude = restuarant?.latitude
+        let latitude = restuarant!.latitude
+        
+        print(latitude)
+        
+        print(longitude) 
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
-        let initialLocation = CLLocation(latitude: latitude!, longitude: longitude!)
+        let initialLocation = CLLocation(latitude: latitude, longitude: longitude)
         
+        
+        
+        self.createAnnotation(restuarant!.name, subTitle: restuarant!.address, coordinate: initialLocation.coordinate) 
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -121,7 +128,7 @@ class RestuarantProfileViewController: UIViewController, CLLocationManagerDelega
             
             if let center = coordinate {
                 
-                let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+                let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
                 
                 self.mapView.setRegion(region, animated: true)
                 self.mapView.showsUserLocation = true

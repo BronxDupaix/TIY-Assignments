@@ -7,8 +7,8 @@
 			"style": "Mexican",
 			"address": "6973 South 1300 East, Cottonwood Heights, UT 84047 ",
 			"ourRating": "4 out of 5",
-			"latitude": "40.624792",
-			"longitude": "-111.855090",
+			"latitude": 40.624792,
+			"longitude": -111.855090,
 			"description": "Cafe Rio, or Cafe Rio Mexican Grill, is a fast casual restaurant chain based in Salt Lake City, with branches in Arizona, California, Colorado, Idaho, Maryland, Montana, Nevada, Utah, Virginia, Washington, and Wyoming. The company specializes in Mexican cuisine. Its menu includes appetizers, tostadas, salads, burritos, desserts, enchiladas, tacos, quesadillas, soups, and beverages.",
 			"photo": "cafeRioPhoto",
 			"menu": [{
@@ -43,8 +43,8 @@
 			"style": "Mexican",
 			"address": "6924 Park Centre Dr, Cottonwood Heights, UT 84121 ",
 			"ourRating": "2.5 out of 5",
-			"latitude": "40.625645",
-			"longitude": "-111.851443",
+			"latitude": 40.625645,
+			"longitude": -111.851443,
 			"description": "Chipotle Mexican Grill, Inc. is a chain of restaurants in the United States, United Kingdom, Canada, Germany, and France,specializing in Mission burritos and tacos. Its name derives from chipotle, the Nahuatl name for a smoked and dried jalapeño chili pepper.",
 			"photo": "chipotlePhoto",
 			"menu": [{
@@ -79,8 +79,8 @@
 			"style": "Mexican",
 			"address": "764 E. Fort Union Blvd Midvale, UT 84047",
 			"ourRating": "5 out of 5",
-			"latitude": "40.621133",
-			"longitude": "-111.869778",
+			"latitude": 40.621133,
+			"longitude": -111.869778,
 			"description": "For 30 years we have offered the highest quality Chile Verde in Utah and are the home to the Smothered Burrito. The only question that remains is, do you want that with cheese and onions?",
 			"photo": "laFronteraPhoto",
 			"menu": [{
@@ -115,8 +115,8 @@
 			"style": "Mexican",
 			"address": "3926 Highland Dr, Holladay, UT 84124",
 			"ourRating": "4 out of 5",
-			"latitude": "40.686671",
-			"longitude": "-111.844962",
+			"latitude": 40.686671,
+			"longitude": -111.844962,
 			"description": "We are proud to offer you the freshest produce, real cheese, choice meats, real dairy products & true Mexican recipes.",
 			"photo": "elChihuahuaPhoto",
 			"menu": [{
