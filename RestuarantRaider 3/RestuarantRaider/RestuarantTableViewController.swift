@@ -15,14 +15,14 @@ class RestuarantTableViewController: UITableViewController {
     
     var restuarantArray = [Restuarant]()
     
-    var currentRestuarant: Restuarant?
+    var currentRestaurant: Restuarant?
     
  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let (jsonString, data) = self.loadJSONFile("restaurant3", fileType: "json")
+        let (jsonString, data) = self.loadJSONFile("restaurant4", fileType: "json")
         
         
         
@@ -55,28 +55,52 @@ class RestuarantTableViewController: UITableViewController {
        
         return restuarantArray.count
     }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100
+        
+    }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         
         
-        self.currentRestuarant = self.restuarantArray[indexPath.row]
         
-        let cell = UITableViewCell()
+        self.currentRestaurant = self.restuarantArray[indexPath.row]
         
-        let name = self.currentRestuarant!.name 
+        
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("RestaurantNameCell", forIndexPath: indexPath) as! RestaurantNameTableViewCell
+        
+        let name = self.currentRestaurant!.name
+        
+        
+        
+        let style = self.currentRestaurant!.style
+        
+        
+        let address = self.currentRestaurant!.address
+        
+        let photo = self.currentRestaurant!.photo
     
         
-        cell.textLabel?.text = "\(name)"
-
+        cell.restaurantNameLabel?.text = "\(name)"
+        
+        cell.addressLabel?.text = "\(address)"
+        
+        cell.styleLabel?.text = "Cuisine: \(style)" 
+        
+        cell.restaurantImage?.image = UIImage(named: "\(photo)") 
+        
+       
         return cell
     }
     
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        self.currentRestuarant = restuarantArray[indexPath.row]
+        self.currentRestaurant = restuarantArray[indexPath.row]
         
        performSegueWithIdentifier("restuarantProfileSegue", sender: self)
         
@@ -90,7 +114,7 @@ class RestuarantTableViewController: UITableViewController {
         if segue.identifier == "restuarantProfileSegue" {
             let viewcontroller = segue.destinationViewController as? RestuarantProfileViewController
             
-            viewcontroller?.restuarant = self.currentRestuarant
+            viewcontroller?.restuarant = self.currentRestaurant
             
             
         }
@@ -130,13 +154,21 @@ class RestuarantTableViewController: UITableViewController {
                     print("no address")
                 }
                 
-                if let ourRating = result["ourRating"] as? Int {
+                if let ourRating = result["ourRating"] as? String {
                     
                     rClass.ourRating = ourRating
                     
                 } else {
                     print("no rating") 
                 }
+                
+                if let latitude = result["latitude"] as? Double {
+                    rClass.latitude = latitude
+                } else{
+                    print("no latitude")
+                }
+                
+                
                 
                 if let description = result["description"] as? String {
                     
@@ -145,8 +177,20 @@ class RestuarantTableViewController: UITableViewController {
                     print("no description")
                 }
                 
-             
+                if let photo = result["photo"] as? String {
+                    rClass.photo = photo
+                    print("photo")
+                } else {
+                    print("no photo") 
+                }
                 
+             
+                if let longitude = result["longitude"] as? Double {
+                    
+                    rClass.longitude = longitude
+                } else {
+                    print(" no longitude")
+                }
                 
                 
                 if let menuesArray = result["menu"] as? JSONArray{
@@ -159,8 +203,6 @@ class RestuarantTableViewController: UITableViewController {
                         let mClass = Menu(dict: menuDict)
                         
                             rClass.menus.append(mClass)
-                        
-                            print("menuAppended")
                         
                         
                                 if let menuName = menuDict["menuName"] as? String {
@@ -199,8 +241,14 @@ class RestuarantTableViewController: UITableViewController {
                             
                                     }
                                 
+                                if let price = dishDict["price"] as? String {
+                                    dClass.price = price
+                                } else {
+                                    print(" no price") 
+                                }
+                                
                                 mClass.dishes.append(dClass)
-                                print("dishesAppended")
+                                
                                 
                             }
 

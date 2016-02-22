@@ -1,0 +1,150 @@
+{
+	"restuarants": [
+
+
+		{
+			"name": "Cafe Rio",
+			"style": "Mexican",
+			"address": "6973 South 1300 East, Cottonwood Heights, UT 84047 ",
+			"ourRating": "4 out of 5",
+			"latitude": "40.624792",
+			"longitude": "-111.855090",
+			"description": "Cafe Rio, or Cafe Rio Mexican Grill, is a fast casual restaurant chain based in Salt Lake City, with branches in Arizona, California, Colorado, Idaho, Maryland, Montana, Nevada, Utah, Virginia, Washington, and Wyoming. The company specializes in Mexican cuisine. Its menu includes appetizers, tostadas, salads, burritos, desserts, enchiladas, tacos, quesadillas, soups, and beverages.",
+			"photo": "cafeRioPhoto",
+			"menu": [{
+				"menuName": "entrees",
+
+				"dishes": [{
+						"dishname": "Smothered Burrito",
+						"description": "A delicious Handmade Flour Tortilla stuffed full with Cilantro Lime Rice, Black or Pinto Beans, Cheese and your choice of Meat, then baked in an oven.",
+						"photo": "cafeRioBurrito",
+						"price": "$9.00"
+
+					}, {
+						"dishname": "Enchiladas",
+						"description": "Fresh Corn Tortillas stuffed with Cheese, Sauce, and your choice of Meat.",
+						"photo": "cafeRioEnchilada",
+						"price": "$7.99"
+					}, {
+						"dishname": "Fish Tacos",
+						"description": "Fresh handmade Flour Tortillas are stuffed full with your choice of mouth-watering Fish.",
+						"photo": "cafeRioFish",
+						"price": "$7.99"
+					}
+
+				]
+
+			}]
+
+		},
+
+		{
+			"name": "Chipotle",
+			"style": "Mexican",
+			"address": "6924 Park Centre Dr, Cottonwood Heights, UT 84121 ",
+			"ourRating": "2.5 out of 5",
+			"latitude": "40.625645",
+			"longitude": "-111.851443",
+			"description": "Chipotle Mexican Grill, Inc. is a chain of restaurants in the United States, United Kingdom, Canada, Germany, and France,specializing in Mission burritos and tacos. Its name derives from chipotle, the Nahuatl name for a smoked and dried jalapeño chili pepper.",
+			"photo": "chipotlePhoto",
+			"menu": [{
+				"menuName": "entrees",
+
+				"dishes": [{
+						"dishname": "Burrito",
+						"description": "Flour tortilla with your choice of meat or sorfitas, rice, beans, or fajita veggies, salsa, or guacamole, and sour cream or cheese",
+						"photo": "chipotleBurrito",
+						"price": "$6.50"
+					}, {
+						"dishname": "Burrito Bowl",
+						"description": "Served in a bowl of your choice of meat or sorfitas, rice, beans, or fajita veggies, salsa, or guacamole, and sour cream, or cheese",
+						"photo": "chipotleBurritoBowl",
+						"price": "$6.50"
+
+					}, {
+						"dishname": "Tacos",
+						"description": "Three tortillas filled with your choice of meat or sorfitas, rice, beans, or fajita veggies, salsa, or guacamole, and sour cream, or cheese",
+						"photo": "chipotleTacos",
+						"price": "$6.50"
+					}
+
+				]
+
+			}]
+
+		},
+
+		{
+			"name": "La Frontera",
+			"style": "Mexican",
+			"address": "764 E. Fort Union Blvd Midvale, UT 84047",
+			"ourRating": "5 out of 5",
+			"latitude": "40.621133",
+			"longitude": "-111.869778",
+			"description": "For 30 years we have offered the highest quality Chile Verde in Utah and are the home to the Smothered Burrito. The only question that remains is, do you want that with cheese and onions?",
+			"photo": "laFronteraPhoto",
+			"menu": [{
+				"menuName": "entrees",
+
+				"dishes": [{
+						"dishname": "Smothered Burrito",
+						"description": "Burrito Smothered with Chile Verde or Chile Colorad, along with cheese and onions",
+						"photo": "laFronteraBurrito",
+						"price": "$10.75"
+
+					}, {
+						"dishname": "Enchiladas",
+						"description": "Enchiladas Smothered with Chile Verde or Chile Colorad, along with cheese and onions",
+						"photo": "laFronteraEnchilada",
+						"price": "$9.75"
+					}, {
+						"dishname": "Chimichangas",
+						"description": "Chimichangas Smothered with Chile Verde or Chile Colorad, along with cheese and onions",
+						"photo": "laFronteraChimichanga",
+						"price": "$11.50"
+					}
+
+				]
+
+			}]
+
+		},
+
+		{
+			"name": "El Chihuahua",
+			"style": "Mexican",
+			"address": "3926 Highland Dr, Holladay, UT 84124",
+			"ourRating": "4 out of 5",
+			"latitude": "40.686671",
+			"longitude": "-111.844962",
+			"description": "We are proud to offer you the freshest produce, real cheese, choice meats, real dairy products & true Mexican recipes.",
+			"photo": "elChihuahuaPhoto",
+			"menu": [{
+				"menuName": "entrees",
+
+				"dishes": [{
+						"dishname": "Carne Asade Burrito",
+						"description": "A giant thirteen inch flour tortilla stuffed with Carne Asade, potatoes, onions, tomatoes, peppers, and chillies",
+						"photo": "elChihuahuaBurrito",
+						"price": "$18.00"
+					}, {
+						"dishname": "Enchiladas",
+						"description": "Two enchiladas with white sauce (sour cream - chicken broth base)",
+						"photo": "elChihuahuaEnchilada",
+						"price": "$15.00"
+					}, {
+						"dishname": "Fajita",
+						"description": "A stir fried combination of meat, onions, bell peppers, tomatoes, and mild green chillies cooked with assorted mexican spices",
+						"photo": "elChihuahuaFajita",
+						"price": "$16.00"
+					}
+
+				]
+
+			}]
+
+		}
+
+
+	]
+}

@@ -18,6 +18,8 @@ class Dish{
     
     var  photo: String = ""
     
+    var price: String = "" 
+    
     
     init(dict: JSONDictionary) {
         

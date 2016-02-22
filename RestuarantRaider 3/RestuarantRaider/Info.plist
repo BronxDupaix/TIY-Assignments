@@ -26,6 +26,21 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>You tryna find some food or nah?</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>App Registers for location updates</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>bakery.ttf</string>
+		<string>Drift___.ttf</string>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

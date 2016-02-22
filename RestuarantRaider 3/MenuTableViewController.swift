@@ -71,12 +71,26 @@ class MenuTableViewController: UITableViewController {
         
         let d = currentMenu?.dishes[indexPath.row]
         
+        let photo = d!.photo
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("menuCellOne", forIndexPath: indexPath)
         
-         cell.textLabel?.text = "\(d!.dishName)"
         
-            return cell
+        let cell = tableView.dequeueReusableCellWithIdentifier("menuCellOne", forIndexPath: indexPath) as? MenuItemsTableViewCell
+        
+         cell?.dishNameLabel?.text = "\(d!.dishName)"
+        
+         cell?.dishDescription?.text = "\(d!.description)"
+        
+        cell?.dishPrice?.text = "\(d!.price)"
+        
+        cell?.dishImage?.image = UIImage(named: "\(photo)") 
+        
+            return cell! 
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100
+        
     }
 
 

@@ -17,9 +17,15 @@ class Restuarant{
     
     var address: String = ""
     
-    var ourRating: Int = 0 
+    var ourRating: String = ""
     
-    var description: String = "" 
+    var latitude: Double = 0.00
+    
+    var longitude: Double = 0.00
+    
+    var description: String = ""
+    
+    var photo: String = "" 
     
     var menus = [Menu]() 
 

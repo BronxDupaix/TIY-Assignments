@@ -20,8 +20,12 @@
 		CADB3A2B1C76566F009326B2 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADB3A2A1C76566F009326B2 /* Dish.swift */; };
 		CADB3A2D1C767002009326B2 /* RestuarantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADB3A2C1C767002009326B2 /* RestuarantProfileViewController.swift */; };
 		CADB3A331C76968B009326B2 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADB3A321C76968B009326B2 /* MenuTableViewController.swift */; };
-		CAE5DFE11C77BBAE0057DF91 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE5DFE01C77BBAE0057DF91 /* LocationsViewController.swift */; };
-		CAE5DFE31C77CE720057DF91 /* restaurant3.json in Resources */ = {isa = PBXBuildFile; fileRef = CAE5DFE21C77CE720057DF91 /* restaurant3.json */; };
+		CAE5DFE71C7908C20057DF91 /* RestaurantNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE5DFE61C7908C20057DF91 /* RestaurantNameTableViewCell.swift */; };
+		CAE5DFE91C79412A0057DF91 /* MenuItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE5DFE81C79412A0057DF91 /* MenuItemsTableViewCell.swift */; };
+		CAE97A321C7A5BD100F05859 /* restaurant4.json in Resources */ = {isa = PBXBuildFile; fileRef = CAE97A311C7A5BD100F05859 /* restaurant4.json */; };
+		CAE97A361C7A7CBA00F05859 /* Drift___.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE97A351C7A7CBA00F05859 /* Drift___.ttf */; };
+		CAE97A381C7A7CD500F05859 /* bakery.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAE97A371C7A7CD500F05859 /* bakery.ttf */; };
+		CAE97A3A1C7AC2AE00F05859 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE97A391C7AC2AE00F05859 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +44,12 @@
 		CADB3A2A1C76566F009326B2 /* Dish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		CADB3A2C1C767002009326B2 /* RestuarantProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestuarantProfileViewController.swift; sourceTree = "<group>"; };
 		CADB3A321C76968B009326B2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = ../MenuTableViewController.swift; sourceTree = "<group>"; };
-		CAE5DFE01C77BBAE0057DF91 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
-		CAE5DFE21C77CE720057DF91 /* restaurant3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurant3.json; sourceTree = "<group>"; };
+		CAE5DFE61C7908C20057DF91 /* RestaurantNameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantNameTableViewCell.swift; sourceTree = "<group>"; };
+		CAE5DFE81C79412A0057DF91 /* MenuItemsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsTableViewCell.swift; sourceTree = "<group>"; };
+		CAE97A311C7A5BD100F05859 /* restaurant4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurant4.json; sourceTree = "<group>"; };
+		CAE97A351C7A7CBA00F05859 /* Drift___.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Drift___.ttf"; sourceTree = "<group>"; };
+		CAE97A371C7A7CD500F05859 /* bakery.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bakery.ttf; sourceTree = "<group>"; };
+		CAE97A391C7AC2AE00F05859 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE97A3A1C7AC2AE00F05859 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +67,7 @@
 		CADB39FE1C762E1F009326B2 = {
 			isa = PBXGroup;
 			children = (
+				CAE97A391C7AC2AE00F05859 /* MapKit.framework */,
 				CADB3A091C762E1F009326B2 /* RestuarantRaider */,
 				CADB3A081C762E1F009326B2 /* Products */,
 			);
@@ -81,15 +91,18 @@
 				CADB3A261C76493E009326B2 /* RestuarantTableViewController.swift */,
 				CADB3A2C1C767002009326B2 /* RestuarantProfileViewController.swift */,
 				CADB3A321C76968B009326B2 /* MenuTableViewController.swift */,
-				CAE5DFE01C77BBAE0057DF91 /* LocationsViewController.swift */,
 				CADB3A0E1C762E1F009326B2 /* Main.storyboard */,
 				CADB3A201C763793009326B2 /* Restuarant.swift */,
 				CADB3A281C765331009326B2 /* Menu.swift */,
 				CADB3A2A1C76566F009326B2 /* Dish.swift */,
+				CAE5DFE61C7908C20057DF91 /* RestaurantNameTableViewCell.swift */,
+				CAE5DFE81C79412A0057DF91 /* MenuItemsTableViewCell.swift */,
 				CADB3A111C762E1F009326B2 /* Assets.xcassets */,
 				CADB3A131C762E1F009326B2 /* LaunchScreen.storyboard */,
 				CADB3A161C762E1F009326B2 /* Info.plist */,
-				CAE5DFE21C77CE720057DF91 /* restaurant3.json */,
+				CAE97A311C7A5BD100F05859 /* restaurant4.json */,
+				CAE97A371C7A7CD500F05859 /* bakery.ttf */,
+				CAE97A351C7A7CBA00F05859 /* Drift___.ttf */,
 			);
 			path = RestuarantRaider;
 			sourceTree = "<group>";
@@ -127,6 +140,11 @@
 					CADB3A061C762E1F009326B2 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = R99S6E3AYJ;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -153,8 +171,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAE5DFE31C77CE720057DF91 /* restaurant3.json in Resources */,
+				CAE97A381C7A7CD500F05859 /* bakery.ttf in Resources */,
+				CAE97A361C7A7CBA00F05859 /* Drift___.ttf in Resources */,
 				CADB3A151C762E1F009326B2 /* LaunchScreen.storyboard in Resources */,
+				CAE97A321C7A5BD100F05859 /* restaurant4.json in Resources */,
 				CADB3A121C762E1F009326B2 /* Assets.xcassets in Resources */,
 				CADB3A101C762E1F009326B2 /* Main.storyboard in Resources */,
 			);
@@ -170,8 +190,9 @@
 				CADB3A271C76493E009326B2 /* RestuarantTableViewController.swift in Sources */,
 				CADB3A1D1C763620009326B2 /* FirstViewController.swift in Sources */,
 				CADB3A331C76968B009326B2 /* MenuTableViewController.swift in Sources */,
+				CAE5DFE71C7908C20057DF91 /* RestaurantNameTableViewCell.swift in Sources */,
 				CADB3A0D1C762E1F009326B2 /* LoginViewController.swift in Sources */,
-				CAE5DFE11C77BBAE0057DF91 /* LocationsViewController.swift in Sources */,
+				CAE5DFE91C79412A0057DF91 /* MenuItemsTableViewCell.swift in Sources */,
 				CADB3A2D1C767002009326B2 /* RestuarantProfileViewController.swift in Sources */,
 				CADB3A211C763793009326B2 /* Restuarant.swift in Sources */,
 				CADB3A0B1C762E1F009326B2 /* AppDelegate.swift in Sources */,
