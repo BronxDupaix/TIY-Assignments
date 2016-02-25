@@ -19,6 +19,9 @@ class RestuarantProfileViewController: UIViewController, CLLocationManagerDelega
     
     var locationManager = CLLocationManager()
     
+    
+    let regionRadius: CLLocationDistance = 1000
+    
 
  
 
@@ -50,6 +53,8 @@ class RestuarantProfileViewController: UIViewController, CLLocationManagerDelega
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
         let initialLocation = CLLocation(latitude: latitude, longitude: longitude)
+        
+        centerMapLocation(initialLocation) 
         
         
         
@@ -85,6 +90,15 @@ class RestuarantProfileViewController: UIViewController, CLLocationManagerDelega
             
             
             }
+        
+    }
+    
+    func centerMapLocation(location: CLLocation) {
+        
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+            regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
+        
         
     }
     
@@ -173,7 +187,7 @@ class RestuarantProfileViewController: UIViewController, CLLocationManagerDelega
         if annotationView == nil {
             
             // pin color
-            annotationView?.pinTintColor = UIColor.orangeColor()
+            annotationView?.pinTintColor = UIColor.greenColor()
             
             // Ensure proper use of identifier
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)

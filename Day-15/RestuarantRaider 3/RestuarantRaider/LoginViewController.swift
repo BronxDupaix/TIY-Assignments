@@ -15,7 +15,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    var usernameHasValue: Bool = false
+    var usernameHasValue: Bool? 
     
     @IBAction func loginButton(sender: UIButton) {
         
@@ -57,6 +57,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         self.usernameTextField!.text = defaults.stringForKey("username") 
     }
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
