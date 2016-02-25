@@ -14,6 +14,7 @@
 		CAC2E6BC1C7EB2CD006CB5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC2E6BA1C7EB2CD006CB5AA /* LaunchScreen.storyboard */; };
 		CAC2E6C41C7EB2DD006CB5AA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2E6C31C7EB2DD006CB5AA /* Movie.swift */; };
 		CAC2E6C61C7EB453006CB5AA /* MovieDBAPI .swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2E6C51C7EB453006CB5AA /* MovieDBAPI .swift */; };
+		CAC2E6C81C7F69A8006CB5AA /* MovieInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2E6C71C7F69A8006CB5AA /* MovieInfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CAC2E6BD1C7EB2CD006CB5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAC2E6C31C7EB2DD006CB5AA /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		CAC2E6C51C7EB453006CB5AA /* MovieDBAPI .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MovieDBAPI .swift"; sourceTree = "<group>"; };
+		CAC2E6C71C7F69A8006CB5AA /* MovieInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				CAC2E6B11C7EB2CD006CB5AA /* AppDelegate.swift */,
 				CAC2E6B31C7EB2CD006CB5AA /* ViewController.swift */,
+				CAC2E6C71C7F69A8006CB5AA /* MovieInfoTableViewCell.swift */,
 				CAC2E6C31C7EB2DD006CB5AA /* Movie.swift */,
 				CAC2E6C51C7EB453006CB5AA /* MovieDBAPI .swift */,
 				CAC2E6B51C7EB2CD006CB5AA /* Main.storyboard */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC2E6C81C7F69A8006CB5AA /* MovieInfoTableViewCell.swift in Sources */,
 				CAC2E6C61C7EB453006CB5AA /* MovieDBAPI .swift in Sources */,
 				CAC2E6B41C7EB2CD006CB5AA /* ViewController.swift in Sources */,
 				CAC2E6B21C7EB2CD006CB5AA /* AppDelegate.swift in Sources */,
@@ -295,6 +299,7 @@
 				CAC2E6C21C7EB2CD006CB5AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

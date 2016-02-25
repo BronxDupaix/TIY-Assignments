@@ -20,6 +20,8 @@ class ViewController: UIViewController, MovieProtocol, UITableViewDataSource, UI
     var moviesArray = [Movie]()
     
     var api = MovieAPI()
+    
+    var movieCell = MovieInfoTableViewCell()
 
     @IBOutlet weak var movieNameTableVIew: UITableView!
     
@@ -27,6 +29,7 @@ class ViewController: UIViewController, MovieProtocol, UITableViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //movieCell.loadImageFromURL()
         
         api.delegate = self 
         
@@ -38,11 +41,19 @@ class ViewController: UIViewController, MovieProtocol, UITableViewDataSource, UI
         
         let movie = self.moviesArray[indexPath.row]
         
-        let cell = UITableViewCell() 
+        let cell = tableView.dequeueReusableCellWithIdentifier("movieInfoCell", forIndexPath: indexPath) as? MovieInfoTableViewCell
         
-        cell.textLabel?.text = movie.title
         
-        return cell
+        cell?.loadImageFromURL("https://image.tmdb.org/t/p/w185\(movie.poster)")
+        
+        
+        // cell?.posterView.image
+        
+        cell?.titleLabel.text = movie.title
+        
+        cell?.overviewLabel.text = movie.overview
+        
+        return cell!
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,24 +61,22 @@ class ViewController: UIViewController, MovieProtocol, UITableViewDataSource, UI
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-    }
+        }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 333
+        }
     
     func passMovie(movieArray: [Movie]) {
         
         self.moviesArray = movieArray
         
-        
-        
         dispatch_async(dispatch_get_main_queue(), {
             
             self.movieNameTableVIew.reloadData()
-            
-        })
-
+            })
     }
 
    
-
 } // end of view
 

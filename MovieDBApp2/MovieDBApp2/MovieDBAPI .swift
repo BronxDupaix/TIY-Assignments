@@ -46,22 +46,23 @@ class MovieAPI {
                                 
                                 if let results = dictionary["results"] as? JSONArray {
                                     
+                                    var movieArray = [Movie]()
+                                    
                                     for result in results {
+                                        
+                                        //print(result)
                                         
                                         let movie = Movie(dict: result as!JSONDictionary)
                                         
-                                        print(movie.title)
+                                        //print(movie.title)
                                         
-                                        print(movie.overview)
-                                        
-                                        var movieArray = [Movie]()
-                                        
+                                        //print(movie.overview)
                                         
                                         movieArray.append(movie)
                                         
-                                        self.delegate?.passMovie(movieArray)
-                                        
-                                    }
+                                        }
+                                    
+                                    self.delegate?.passMovie(movieArray)
                                 }
                                 
     
@@ -73,26 +74,18 @@ class MovieAPI {
                             
                             debugPrint("cant parse JSON")
                             
-                            
+                            }
                         }
-                        
-                    }
                 }
                 
             })
             
             task.resume()
             
-            
-            
-            
-            
-        } else {
+            } else {
             debugPrint("cant print data")
         }
         
-        
     }
 
-    
 }
