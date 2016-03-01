@@ -21,7 +21,7 @@ class APIController
     
     init(delegate: APIControllerProtocol) {
         self.delegate = delegate
-    }
+    } 
     
     // MARK: - Public Methods
     

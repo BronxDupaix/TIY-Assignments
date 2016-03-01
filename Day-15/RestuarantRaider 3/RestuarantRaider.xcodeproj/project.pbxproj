@@ -64,6 +64,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CAC2E6EA1C7FB97C006CB5AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CADB3A0C1C762E1F009326B2 /* LoginViewController.swift */,
+				CADB3A1E1C7636F5009326B2 /* About ViewController.swift */,
+				CADB3A1C1C763620009326B2 /* FirstViewController.swift */,
+				CADB3A261C76493E009326B2 /* RestuarantTableViewController.swift */,
+				CADB3A2C1C767002009326B2 /* RestuarantProfileViewController.swift */,
+				CADB3A321C76968B009326B2 /* MenuTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CAC2E6F21C7FC234006CB5AA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CADB3A201C763793009326B2 /* Restuarant.swift */,
+				CADB3A2A1C76566F009326B2 /* Dish.swift */,
+				CADB3A281C765331009326B2 /* Menu.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		CADB39FE1C762E1F009326B2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,16 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				CADB3A0A1C762E1F009326B2 /* AppDelegate.swift */,
-				CADB3A0C1C762E1F009326B2 /* LoginViewController.swift */,
-				CADB3A1E1C7636F5009326B2 /* About ViewController.swift */,
-				CADB3A1C1C763620009326B2 /* FirstViewController.swift */,
-				CADB3A261C76493E009326B2 /* RestuarantTableViewController.swift */,
-				CADB3A2C1C767002009326B2 /* RestuarantProfileViewController.swift */,
-				CADB3A321C76968B009326B2 /* MenuTableViewController.swift */,
 				CADB3A0E1C762E1F009326B2 /* Main.storyboard */,
-				CADB3A201C763793009326B2 /* Restuarant.swift */,
-				CADB3A281C765331009326B2 /* Menu.swift */,
-				CADB3A2A1C76566F009326B2 /* Dish.swift */,
+				CAC2E6EA1C7FB97C006CB5AA /* ViewControllers */,
+				CAC2E6F21C7FC234006CB5AA /* Classes */,
 				CAE5DFE61C7908C20057DF91 /* RestaurantNameTableViewCell.swift */,
 				CAE5DFE81C79412A0057DF91 /* MenuItemsTableViewCell.swift */,
 				CADB3A111C762E1F009326B2 /* Assets.xcassets */,
