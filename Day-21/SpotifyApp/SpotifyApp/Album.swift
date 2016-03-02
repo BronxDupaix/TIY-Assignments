@@ -12,9 +12,16 @@ class Album {
     
     var albumName: String = ""
     
-    var releaseDate: Int = 0
+    var albumID: String = ""
+    
+    // var releaseDate: Int = 0
     
     // var trackArray = [Track]()
+    
+    
+    init() {
+        
+    }
     
     
     init(dict: JSONDictionary) {
@@ -22,16 +29,14 @@ class Album {
         if let albumName = dict["name"] as? String {
             
             self.albumName = albumName
+            
         } else {
             print(" no album name")
         }
         
-        if let releaseDate = dict["release_date"] as? Int {
+        if let albumID = dict["id"] as? String {
             
-            self.releaseDate = releaseDate
-        } else {
-            
-            print("no album release date") 
+            self.albumID = albumID 
         }
         
     }

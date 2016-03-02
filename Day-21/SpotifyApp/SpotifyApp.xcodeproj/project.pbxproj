@@ -14,10 +14,11 @@
 		CA5B871A1C8538C0005EC4D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5B87181C8538C0005EC4D5 /* LaunchScreen.storyboard */; };
 		CA5B87221C853909005EC4D5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B87211C853909005EC4D5 /* Artist.swift */; };
 		CA5B87241C853926005EC4D5 /* SpotifyApi .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B87231C853926005EC4D5 /* SpotifyApi .swift */; };
-		CA5B87261C854271005EC4D5 /* ArtistItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B87251C854270005EC4D5 /* ArtistItems.swift */; };
 		CA5B87281C856B28005EC4D5 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B87271C856B28005EC4D5 /* Album.swift */; };
 		CA5B872B1C856B67005EC4D5 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B872A1C856B67005EC4D5 /* Track.swift */; };
 		CA5B872D1C856E77005EC4D5 /* TrackItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B872C1C856E77005EC4D5 /* TrackItems.swift */; };
+		CAE9C5AE1C863D3A001308C0 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9C5AD1C863D3A001308C0 /* ArtistTableViewCell.swift */; };
+		CAE9C5B01C86405E001308C0 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9C5AF1C86405E001308C0 /* AlbumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +31,11 @@
 		CA5B871B1C8538C0005EC4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA5B87211C853909005EC4D5 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		CA5B87231C853926005EC4D5 /* SpotifyApi .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpotifyApi .swift"; sourceTree = "<group>"; };
-		CA5B87251C854270005EC4D5 /* ArtistItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistItems.swift; sourceTree = "<group>"; };
 		CA5B87271C856B28005EC4D5 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		CA5B872A1C856B67005EC4D5 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		CA5B872C1C856E77005EC4D5 /* TrackItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackItems.swift; sourceTree = "<group>"; };
+		CAE9C5AD1C863D3A001308C0 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
+		CAE9C5AF1C86405E001308C0 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,9 @@
 			children = (
 				CA5B870F1C8538C0005EC4D5 /* AppDelegate.swift */,
 				CA5B87111C8538C0005EC4D5 /* ViewController.swift */,
+				CAE9C5AF1C86405E001308C0 /* AlbumViewController.swift */,
 				CA5B87231C853926005EC4D5 /* SpotifyApi .swift */,
+				CAE9C5AD1C863D3A001308C0 /* ArtistTableViewCell.swift */,
 				CA5B87291C856B3D005EC4D5 /* Class */,
 				CA5B87131C8538C0005EC4D5 /* Main.storyboard */,
 				CA5B87161C8538C0005EC4D5 /* Assets.xcassets */,
@@ -82,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				CA5B87211C853909005EC4D5 /* Artist.swift */,
-				CA5B87251C854270005EC4D5 /* ArtistItems.swift */,
 				CA5B87271C856B28005EC4D5 /* Album.swift */,
 				CA5B872A1C856B67005EC4D5 /* Track.swift */,
 				CA5B872C1C856E77005EC4D5 /* TrackItems.swift */,
@@ -162,13 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5B87261C854271005EC4D5 /* ArtistItems.swift in Sources */,
 				CA5B87241C853926005EC4D5 /* SpotifyApi .swift in Sources */,
 				CA5B872D1C856E77005EC4D5 /* TrackItems.swift in Sources */,
 				CA5B87221C853909005EC4D5 /* Artist.swift in Sources */,
+				CAE9C5B01C86405E001308C0 /* AlbumViewController.swift in Sources */,
 				CA5B87121C8538C0005EC4D5 /* ViewController.swift in Sources */,
 				CA5B87101C8538C0005EC4D5 /* AppDelegate.swift in Sources */,
 				CA5B87281C856B28005EC4D5 /* Album.swift in Sources */,
+				CAE9C5AE1C863D3A001308C0 /* ArtistTableViewCell.swift in Sources */,
 				CA5B872B1C856B67005EC4D5 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +323,7 @@
 				CA5B87201C8538C0005EC4D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

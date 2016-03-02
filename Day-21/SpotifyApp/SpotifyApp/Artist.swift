@@ -13,16 +13,30 @@ typealias JSONArray = [JSONDictionary]
 
 class Artist {
     
-    var items = [Items]()
+    var name: String = ""
+    
+    var artistID: String = ""
+    
+    var albums = [Album]() 
     
     
+    init () {
+        
+    }
     init(dict: JSONDictionary) {
         
-        if let itemsArray = dict["items"] as? JSONArray? {
+        if let name = dict["name"] as? String {
             
-
-            }
-    
+            self.name = name
+        }
+        
+        if let artistID = dict["id"] as? String {
+            
+            self.artistID = artistID 
+        }
+        
+        
     }
+
     
 }

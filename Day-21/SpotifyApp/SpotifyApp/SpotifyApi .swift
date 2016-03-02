@@ -11,10 +11,14 @@ import Foundation
 
 class SpotifyApi {
     
+    var artist = Artist()
+    
+    var delegate: RetrieveArtist? 
+    
     func fetchArtist(artist: String) {
         
         
-        let urlString = "https://api.spotify.com/v1/search?q=\(artist)&type=artist" 
+        let urlString = "https://api.spotify.com/v1/search?q=\(artist)&type=artist"
         
         
         if let url = NSURL(string: urlString)
@@ -36,13 +40,39 @@ class SpotifyApi {
                     if let data = data {
                         
                         do {
-                            
+                            // Step One Dictionary
                             if let dictionary = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? JSONDictionary {
                                 
                                 // print(dictionary)
                                 
-                                let artist = Artist(dict: dictionary)
-
+                                if let artistsDict = dictionary["artists"] as?  JSONDictionary {
+                                    
+                                   var arrayOfArtists = [Artist]()
+                                    
+                                    if let itemsArray = artistsDict["items"] as? JSONArray {
+                                        
+                                        
+                                        if let itemDict = itemsArray.first {
+                                            self.artist = Artist(dict: itemDict)
+                                            
+                                           // print(self.artist.name)
+                                            
+                                       
+                                            self.fetchAlbum(self.artist.artistID)
+                                            
+                                            
+                                        }
+                                        
+                                    }else {
+                                        print( " i couldnt loop through artists")
+                                        
+                                        
+                                    }
+                                } else {
+                                    print(" coudnt get artists from dictionary")
+                                }
+                                
+                                
                                 
                             } else {
                                 debugPrint("cant parse dictionary")
@@ -69,8 +99,7 @@ class SpotifyApi {
     func fetchAlbum(artistID: String) {
         
         
-        let urlString = "https://api.spotify.com/v1/albums/\(artistID)"
-        
+        let urlString = "https://api.spotify.com/v1/artists/\(artistID)/albums?market=US&album_type=album&limit=10" 
         
         if let url = NSURL(string: urlString)
         {
@@ -86,7 +115,7 @@ class SpotifyApi {
                 }else {
                     
                     
-                    // print(data)
+                     // print(data)
                     
                     if let data = data {
                         
@@ -94,7 +123,29 @@ class SpotifyApi {
                             
                             if let albumDict = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? JSONDictionary {
                                 
-                                // print(dictionary)
+                                if let items = albumDict["items"] as? JSONArray{
+                                    var albums = [Album]()
+                                    
+                                    for item in items {
+                                        
+                                        let a = Album(dict: item)
+                                        
+                                       // print(a.albumName)
+                                        
+                                        // print(a.albumID)
+                                        
+                                        albums.append(a)
+                                        
+                                    }
+                                    
+                                    self.artist.albums = albums 
+                                    
+                                
+                                    
+                                    
+                                }
+                                
+                                self.delegate?.passArtist(self.artist) 
                                 
                                 
                             } else {
@@ -118,7 +169,7 @@ class SpotifyApi {
         }
         
     }
-
+    
     
     
     
@@ -149,7 +200,7 @@ class SpotifyApi {
                             
                             if let trackDict = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? JSONDictionary {
                                 
-                                // print(dictionary) 
+                                // print(dictionary)
                                 
                                 
                             } else {
