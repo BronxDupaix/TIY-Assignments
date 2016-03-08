@@ -1,0 +1,10 @@
+PODS:
+  - SFDraggableDialogView (1.1.2)
+
+DEPENDENCIES:
+  - SFDraggableDialogView
+
+SPEC CHECKSUMS:
+  SFDraggableDialogView: 8393cc502d3931791ab03958d68332e691d7ef54
+
+COCOAPODS: 0.39.0

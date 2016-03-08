@@ -1,0 +1,6 @@
+framework module APPaginalTableView {
+  umbrella header "APPaginalTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -22,9 +22,6 @@ class ViewController: UIViewController {
         
     }
     
-        
-        
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         print("segue")
@@ -34,8 +31,11 @@ class ViewController: UIViewController {
         
         if segue.identifier == "exitSegue" {
             
+            
             let newDate = segue.sourceViewController as! SetDestinationViewController
+            
             let futureDate = newDate.destinationDate
+            
             destinationLabel.text = futureDate
         }
         
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         
         dateFormatter.dateFormat = "MMM-dd-yyyy"
         
-        var todayString = dateFormatter.stringFromDate(today)
+        let todayString = dateFormatter.stringFromDate(today)
         
         presentLabel.text = todayString
     }
