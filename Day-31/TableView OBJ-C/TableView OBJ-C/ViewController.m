@@ -34,7 +34,7 @@
     
     NSNumber *floatNumber = [[NSNumber alloc] initWithFloat:32.0f];
     
-    NSLog(@"%.2f" ,[floatNumber floatValue]);
+    NSLog(@"%.2f" ,[floatNumber floatValue]); 
     
 //    NSDictionary *myDict = @{ @"Phil": @"Key3", @"Phil2":@"Key4"};
     
@@ -80,7 +80,7 @@
     
     dialogView.frame = self.view.bounds;
     
-    [self.view addSubview:dialogView];
+    [self.view addSubview:dialogView]; 
 
     
 }
