@@ -17,23 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1L-Pl-Vvb">
-                                <rect key="frame" x="207" y="372" width="187" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="PASS COLOR "/>
+                            <tableView clipsSubviews="YES" alpha="0.55000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NZs-LG-D6Z">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ColorCell" id="Hlx-jC-0nY">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hlx-jC-0nY" id="wUH-0G-Qqa">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="passColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8k-JL-8iO"/>
-                                    <segue destination="q1y-59-MHs" kind="show" identifier="PassColorSegue" id="Wi7-IC-NBR"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Gua-yS-2QZ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CMd-Jd-snc"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M1L-Pl-Vvb" secondAttribute="bottom" constant="180" id="dFz-1f-ivu"/>
-                            <constraint firstItem="M1L-Pl-Vvb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khy-tf-qKY"/>
+                            <constraint firstItem="NZs-LG-D6Z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="96L-9R-fEP"/>
+                            <constraint firstItem="NZs-LG-D6Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HUf-b3-YbU"/>
+                            <constraint firstItem="NZs-LG-D6Z" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="YAd-PG-2h1"/>
+                            <constraint firstItem="NZs-LG-D6Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yjS-1p-Ywu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qL8-N6-al0"/>
+                    <connections>
+                        <outlet property="colorTableView" destination="NZs-LG-D6Z" id="PFA-RU-aOI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

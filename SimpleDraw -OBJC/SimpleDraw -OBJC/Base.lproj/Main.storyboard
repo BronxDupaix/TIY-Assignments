@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ixb-Cc-BI5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cy-F2-Pxg">
+                                <rect key="frame" x="0.0" y="460" width="120" height="120"/>
+                                <state key="normal" image="blue"/>
+                                <connections>
+                                    <action selector="blueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4gj-ot-HBh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpJ-1F-J90">
+                                <rect key="frame" x="171" y="460" width="120" height="120"/>
+                                <state key="normal" image="green"/>
+                                <connections>
+                                    <action selector="greenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YUy-9c-8gV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1e-sc-WQl">
+                                <rect key="frame" x="318" y="460" width="120" height="120"/>
+                                <state key="normal" image="Group"/>
+                                <connections>
+                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRT-TI-v4D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ixb-Cc-BI5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7TT-gh-T9W"/>
+                            <constraint firstItem="Ixb-Cc-BI5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FXk-hL-LpY"/>
+                            <constraint firstItem="Ixb-Cc-BI5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Kne-OR-Jyk"/>
+                            <constraint firstItem="Ixb-Cc-BI5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="R6o-42-fAN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r1e-sc-WQl" secondAttribute="bottom" constant="20" id="WP7-EV-Rxd"/>
+                            <constraint firstItem="r1e-sc-WQl" firstAttribute="leading" secondItem="MpJ-1F-J90" secondAttribute="trailing" constant="27" id="f4h-sB-eYi"/>
+                            <constraint firstItem="MpJ-1F-J90" firstAttribute="leading" secondItem="6Cy-F2-Pxg" secondAttribute="trailing" constant="51" id="oAY-c9-g1D"/>
+                            <constraint firstItem="6Cy-F2-Pxg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="prT-R5-KpL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MpJ-1F-J90" secondAttribute="bottom" constant="20" id="sji-5B-Nwb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Cy-F2-Pxg" secondAttribute="bottom" constant="20" id="xFi-kG-Vda"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ixb-Cc-BI5" id="i4u-0s-Eyc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group" width="120" height="120"/>
+        <image name="blue" width="120" height="120"/>
+        <image name="green" width="120" height="120"/>
+    </resources>
+</document>

@@ -15,6 +15,7 @@
 		CAF4315A1C99EB7D006129C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF431581C99EB7D006129C0 /* LaunchScreen.storyboard */; };
 		CAF431631C9A01E1006129C0 /* ISColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF431621C9A01E1006129C0 /* ISColorWheel.m */; };
 		CAF431661C9A0914006129C0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF431651C9A0914006129C0 /* SecondViewController.m */; };
+		CAF431691C9B08BA006129C0 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF431681C9B08BA006129C0 /* Color.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		CAF431621C9A01E1006129C0 /* ISColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISColorWheel.m; sourceTree = "<group>"; };
 		CAF431641C9A0914006129C0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		CAF431651C9A0914006129C0 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CAF431671C9B08BA006129C0 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		CAF431681C9B08BA006129C0 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				CAF4314E1C99EB7D006129C0 /* AppDelegate.m */,
 				CAF431501C99EB7D006129C0 /* ViewController.h */,
 				CAF431511C99EB7D006129C0 /* ViewController.m */,
+				CAF431671C9B08BA006129C0 /* Color.h */,
+				CAF431681C9B08BA006129C0 /* Color.m */,
 				CAF431531C99EB7D006129C0 /* Main.storyboard */,
 				CAF431641C9A0914006129C0 /* SecondViewController.h */,
 				CAF431651C9A0914006129C0 /* SecondViewController.m */,
@@ -163,6 +168,7 @@
 				CAF431661C9A0914006129C0 /* SecondViewController.m in Sources */,
 				CAF431521C99EB7D006129C0 /* ViewController.m in Sources */,
 				CAF431631C9A01E1006129C0 /* ISColorWheel.m in Sources */,
+				CAF431691C9B08BA006129C0 /* Color.m in Sources */,
 				CAF4314F1C99EB7D006129C0 /* AppDelegate.m in Sources */,
 				CAF4314C1C99EB7D006129C0 /* main.m in Sources */,
 			);
@@ -311,6 +317,7 @@
 				CAF431601C99EB7D006129C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

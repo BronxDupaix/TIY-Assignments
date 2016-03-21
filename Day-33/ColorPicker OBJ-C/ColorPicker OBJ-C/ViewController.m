@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import "ISColorWheel.h"
+#import "Color.h"
 
 @interface ViewController () <ISColorWheelDelegate>
 
 @property (strong, nonatomic) ISColorWheel *colorWheel;
 
-@property (strong, nonatomic) UIColor *passColor;
+@property (strong, nonatomic) NSMutableArray *colorArray;
+
+// @property (strong, nonatomic) Color* color;
 
 @end
 
@@ -21,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.colorArray = [[NSMutableArray alloc] init];
     
     CGSize size = self.view.bounds.size;
     
@@ -36,6 +41,7 @@
     _colorWheel.delegate = self;
     _colorWheel.continuous = true;
     [self.view addSubview:_colorWheel];
+    
    
 }
 
@@ -43,7 +49,6 @@
 {
     
     self.view.backgroundColor = [colorWheel currentColor];
-    
     UIColor *uicolor = [colorWheel currentColor] ;
     CGColorRef color = [uicolor CGColor];
     
@@ -56,28 +61,33 @@
         CGFloat green = components[1];
         CGFloat blue = components[2];
         NSLog(@"red: %.2f" ,red);
-        
         NSLog(@"blue: %.2f" ,blue);
+        NSLog(@"green: %.2f" ,green); 
         
-        NSLog(@"green: %.2f" ,green);
-    }
-}
-
--(IBAction)prepareForSegue:(UIStoryboardSegue *)segue {
-    
-    if ([segue.identifier isEqualToString:@"PassColorSegue"]) {
+        [self.colorArray addObject:[UIColor colorWithRed:red green:green blue:blue alpha:1.0f]];
         
-        NSLog(@"PassColorSeguePerformed");
-        
-       
+        // self.color.red = red
         
     }
-
-    
 }
 
-- (IBAction)passColorButton:(UIButton *)sender {
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
+     UIColor *color = [self.colorArray objectAtIndex:indexPath.row];
+    
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ColorCell"];
+    
+    cell.textLabel.text = @"Hello"; 
+    
+    // cell.backgroundColor = [UIColor _color];
+    
+    return cell;
 }
+
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
 @end
