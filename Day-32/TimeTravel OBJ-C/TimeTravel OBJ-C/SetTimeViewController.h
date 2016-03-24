@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SetTimeViewController : UIViewController
+@interface SetTimeViewController : UIViewController {
+     @public NSString *destinationDate;
+}
 
-- (IBAction)datePicker:(UIDatePicker *)sender; 
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+- (IBAction)datePickerAction:(UIDatePicker *)sender;
 
 
 @end

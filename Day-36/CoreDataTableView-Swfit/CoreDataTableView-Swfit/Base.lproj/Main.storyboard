@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M0z-XS-tuL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreDataTableView_Swfit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-H3-Z3J">
+                                <rect key="frame" x="2" y="69" width="596" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="U9s-lT-MwD"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IxZ-bm-fnV">
+                                <rect key="frame" x="0.0" y="115" width="600" height="485"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProCell" id="EMm-9n-cNi" customClass="ProCellTableViewCell" customModule="CoreDataTableView_Swfit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EMm-9n-cNi" id="MBE-Y9-bhn">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATED DATE " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIV-Jw-nzK">
+                                                    <rect key="frame" x="404.5" y="3.5" width="187.5" height="31.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="aIV-Jw-nzK" secondAttribute="bottom" constant="8.5" id="8lR-SR-oit"/>
+                                                <constraint firstAttribute="trailing" secondItem="aIV-Jw-nzK" secondAttribute="trailing" constant="8" id="VIf-TC-hsj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="createdDateLabel" destination="aIV-Jw-nzK" id="q2i-sZ-12i"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gnk-uw-8Kb"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5aa-LS-Xhy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eVT-H3-Z3J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0eF-me-zif"/>
+                            <constraint firstItem="IxZ-bm-fnV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3E4-R0-R0Y"/>
+                            <constraint firstItem="IxZ-bm-fnV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A8d-1m-ccZ"/>
+                            <constraint firstItem="eVT-H3-Z3J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="DWz-A2-bcz"/>
+                            <constraint firstItem="eVT-H3-Z3J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="bIe-Vj-VZ2"/>
+                            <constraint firstItem="eVT-H3-Z3J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="jGz-Nm-Ugn"/>
+                            <constraint firstAttribute="trailing" secondItem="eVT-H3-Z3J" secondAttribute="trailing" constant="2" id="neq-GD-xno"/>
+                            <constraint firstItem="IxZ-bm-fnV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oir-qk-rOP"/>
+                            <constraint firstAttribute="trailing" secondItem="IxZ-bm-fnV" secondAttribute="trailing" id="wnr-2q-aEx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IxZ-bm-fnV" secondAttribute="bottom" id="xiZ-Jo-AgZ"/>
+                            <constraint firstItem="IxZ-bm-fnV" firstAttribute="top" secondItem="eVT-H3-Z3J" secondAttribute="bottom" constant="2" id="xrf-3R-puM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DWz-A2-bcz"/>
+                                <exclude reference="3E4-R0-R0Y"/>
+                                <exclude reference="A8d-1m-ccZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="o8L-v6-m2w">
+                        <barButtonItem key="rightBarButtonItem" title="ADD TASK" id="j1D-xi-Cts">
+                            <connections>
+                                <action selector="addTaskButton:" destination="BYZ-38-t0r" id="2Sy-uf-7eB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="IxZ-bm-fnV" id="acw-MQ-JBA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RNg-qb-Gwl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M0z-XS-tuL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aQF-EH-7Dv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dLP-bo-47t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ca2-Pf-VK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="305"/>
+        </scene>
+    </scenes>
+</document>

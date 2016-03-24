@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CoreDataTableView-Swift.xcodeproj">
+      location = "self:CoreDataTableView-Swfit.xcodeproj">
    </FileRef>
 </Workspace>

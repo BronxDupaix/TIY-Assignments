@@ -10,17 +10,18 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *destinationLabel;
+{
+    NSTimer *timer;
+    int count;
+    NSString *newStr;
+}
 
-@property (weak, nonatomic) IBOutlet UILabel *presentLabel;
-
-@property (weak, nonatomic) IBOutlet UILabel *departedLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *destinationTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *presentTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lastTimeDepartedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
-
-- (IBAction)setTimeButton:(UIButton *)sender;
-
-- (IBAction)timeTravelButton:(UIButton *)sender;
+- (IBAction)travelBack:(UIButton *)sender;
+- (void)updateSpeed;
 
 
 

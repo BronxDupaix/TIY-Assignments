@@ -62,9 +62,9 @@
 			children = (
 				CA49379A1C692CDD00E5F4D6 /* AppDelegate.swift */,
 				CA49379C1C692CDD00E5F4D6 /* ViewController.swift */,
+				CA4937AC1C69339B00E5F4D6 /* HeroInfoViewController.swift */,
 				CA09FCA91C695E96006FAE03 /* Hero.swift */,
 				CA49379E1C692CDD00E5F4D6 /* Main.storyboard */,
-				CA4937AC1C69339B00E5F4D6 /* HeroInfoViewController.swift */,
 				CA4937D21C6948DF00E5F4D6 /* heros.json */,
 				CA4937A11C692CDD00E5F4D6 /* Assets.xcassets */,
 				CA4937A31C692CDD00E5F4D6 /* LaunchScreen.storyboard */,

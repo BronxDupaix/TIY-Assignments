@@ -10,31 +10,33 @@
 
 @interface SetTimeViewController ()
 
+
+
 @end
 
 @implementation SetTimeViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 
 
 
-- (IBAction)datePicker:(UIDatePicker *)sender {
-    
-    
+- (IBAction)datePickerAction:(UIDatePicker *)sender {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     
     [dateFormatter setDateFormat:@"MMM-dd-yyyy"];
     
-    
     NSString *dateFromPicker = [dateFormatter stringFromDate:self.datePicker.date];
-                                
+    
     destinationDate = [dateFromPicker uppercaseString];
     
+    NSLog(@"%@", destinationDate); 
     
-    NSLog(@" Value Changed"); 
+    
 }
+
 @end

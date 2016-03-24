@@ -16,55 +16,74 @@
 
 @implementation ViewController
 
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(timerCalled) userInfo:nil repeats:YES];
-    
+    [self dates];
 }
 
--(void)timerCalled {
+
+
+
+-(void)updateSpeed {
+    if (count <= 88) {
+        count++;
+        NSString *currentCount = [NSString stringWithFormat:@"%d", count];
+        self.speedLabel.text = currentCount;
+    } else {
+        [timer invalidate];
+        timer = nil;
+        self.speedLabel.text = @"Travel";
+        [self performSegueWithIdentifier:@"timeTravelSegue" sender:self];
+    }
+};
+
+
+- (IBAction)travelBack:(UIButton *)sender {
+    count = 0;
+    timer = [NSTimer scheduledTimerWithTimeInterval: 0.1
+                                             target: self
+                                           selector: @selector(updateSpeed)
+                                           userInfo: nil
+                                            repeats: YES];
     
-    NSLog(@"timerCalled");
-}
+};
 
-//-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    
-//    if ([segue.identifier isEqualToString:@"setTimeSegue"]) {
-//        
-//    }
-//    
-//    
-//}
-
+-(void) dates {
+    
+    NSDate *today = [NSDate date];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setDateFormat:@"MMM-dd-yyyy"];
+    
+    NSString *todayString = [dateFormatter stringFromDate:today];
+    
+    self.presentTimeLabel.text = [todayString uppercaseString];
+    
+    NSLog(@"%@", todayString);
+    
+};
 -(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {
+    if ([segue.identifier isEqualToString:@"getTheDateSegue"]) {
+        SetTimeViewController *controller = (SetTimeViewController *) segue.sourceViewController; 
+        newStr = controller->destinationDate;
+        self.destinationTimeLabel.text = newStr;
+    };
     
-    if ([segue.identifier isEqualToString:@"prepareForUnwindSegue"]) {
-        
-        NSLog(@" Unwind Segue Performed");
-        
-        SetTimeViewController *setTimeVC = (SetTimeViewController *)segue.sourceViewController;
-        
-        newStr = setTimeVC -> destinationDate;
-        self.destinationLabel.text = newStr;
+    
+}
+-(IBAction)weNeedRoadsAgain:(UIStoryboardSegue *)segue {
+    if ([segue.identifier isEqualToString:@"onTheRoadAgain"]) {
+        self.lastTimeDepartedLabel.text = self.presentTimeLabel.text;
+        self.presentTimeLabel.text = self.destinationTimeLabel.text;
+        count = 0;
+        NSString *currentCount = [NSString stringWithFormat:@"%d", count];
+        self.speedLabel.text = currentCount;
         
     }
-    
-    
 }
 
-
-- (IBAction)setTimeButton:(UIButton *)sender {
-    
-    // NSLog(@" Set time Button");
-    
-    
-    
-}
-
-- (IBAction)timeTravelButton:(UIButton *)sender {
-    
-   // NSLog(@" Time travel button");
-}
 @end
